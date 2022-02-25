@@ -1,0 +1,41 @@
+<div class="fondo_main_box">
+  <div class="main_box">
+    <h1>FORMACIÓN Y PROYECTOS</h1>
+    <p>En este apartado, voy a desarrollar las formaciones que me llevaron a ser quién soy hoy y las proyecciones académicas que me llevarán a ser lo que apunto hoy en día.</p>
+  </div>
+</div>
+<div class="formacion formacion_academica">
+  <div class="titulo_box">
+    <h1>Formación Académica</h1>
+    <br>
+    <div class="separador_blanco"></div>
+    <br>
+    <p>A lo largo de mi vida siempre creí que para llegar a cumplir los objetivos es muy importante formarse y educarse de la mejor forma posible, aunque eso implique un gran esfuerzo.</p>
+  </div>
+  <div class="bloque_contenido">
+  <div class="contenido" *ngFor="let formacion of formacionesRealizadas; let i = index">
+      <div class="informacion">
+        <h3><b>{{formacion.nombre}}</b></h3>
+        <p>{{formacion.descripcion}}</p>
+      </div>
+      <div class="separador" *ngIf="i != formacionesRealizadas.length-1"></div>
+    </div>
+  </div>
+<div class="formacion proyeccion_academica">
+  <div class="titulo_box">
+    <h1>Proyección Académica</h1>
+    <br>
+    <div class="separador_blanco"></div>
+    <br>
+    <p>Hoy en día apunto a mucho más de lo que ya soy. Me gusta tomar caminos difíciles que a la larga me van a generar una mejor recompensa y una mayor satisfacción. Ese tipo de convicciones son las que me llevan a tomar decisiones que para algunos son una locura y que para otros, es la mejor opción.</p>
+  </div>
+  <div class="bloque_contenido">
+    <div class="contenido" *ngFor="let proyecto of proyeccionesAcademicas; let i = index">
+      <div class="informacion">
+        <h3><b>{{proyecto.nombre}}</b></h3>
+        <p>{{proyecto.descripcion}}</p>
+      </div>
+      <div class="separador" *ngIf="i != proyeccionesAcademicas.length-1"></div>
+    </div>
+  </div>
+</div>

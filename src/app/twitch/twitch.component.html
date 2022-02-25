@@ -1,0 +1,11 @@
+<div class="twitch_fondo">
+  <div class="seccion" *ngFor="let canal of canalesTwitch; let i = index">
+    <div class="preview">
+      <video loop autoplay [muted]="true" [src]="canal.preview"></video>
+    </div>
+    <h1><b>{{canal.nombre.toUpperCase()}}</b></h1>
+    <span>{{canal.resumen}}</span>
+    <p>{{canal.descripcion}}</p>
+    <div class="ver_mas" (click)="abrirReproductor(i)">ver más</div>
+  </div>
+</div>

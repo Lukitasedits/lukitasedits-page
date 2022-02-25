@@ -1,0 +1,60 @@
+
+<div class="fondo">
+  <div class="informacion_personal"><h1>INFORMACIÓN PERSONAL</h1></div>
+  <div class="biografia">
+    <div class="imagen"></div>
+    <div class="texto">
+      <h1>Biografía</h1>
+      <p>Mi nombre es Lucas Petersen Frers, tengo 18 años y me interesa el diseño multimedial  desde hace mucho tiempo.  Este último año
+        me estuve enfocando en la programación y en la animación.</p>
+    </div>
+  </div>
+  <div class="conocimientos">
+    <div class="texto">
+      <h1>Conocimientos</h1>
+      <div class="parrafo">
+        <div><b>Programas de diseño multimedial:</b>
+          <ul>
+            <li><b>Phtoshop:</b> Edición de imágenes y desarrollo de gráficos.</li>
+            <li><b>Premiere:</b> Edición de video.</li>
+            <li><b>Cinema 4D:</b> Modelado de objetos 3D, animación e iluminación.</li>
+            <li><b>Photoshop:</b> Fotomontaje, corrección de fotos, iluminación, etc.</li>
+            <li><b>After effects:</b> Motion graphics.</li>
+          </ul>
+          <hr>
+          <b>Programación:</b>
+          <ul>
+            <li><b>Angular:</b> Manejo de Front-end para aplicaciones web.</li>
+            <li><b>Java:</b> Conocimiento integral del lenguaje.</li>
+            <li><b>Spring</b> Desarrollo del back-end en aplicaciones web.</li>
+            <li><b>Delphi:</b> Desarrollo de aplicaciones de escritorio.</li>
+            <li><b>SQL:</b> Consultas para interactuar con la base de datos a través de la tecnologías Spring y JDBC.</li>
+          </ul>
+          <hr>
+        </div>
+      </div>
+    </div>
+    <div class="imagen"></div>
+  </div>
+  <div class="logro">
+    <div class="imagen">
+      <div class="carrusel">
+        <div class="boton btn_left" (click)="bandaIzq()" [ngStyle]="{'opacity': opaIzq, 'cursor': opaIzq == 1? 'pointer': 'default'}"></div>
+        <div class="vista">
+          <div class="banda" [ngStyle]="{'left': posBanda + 'px'}">
+            <div class="imagen_carrusel img1"></div>
+            <div class="imagen_carrusel img2"></div>
+            <div class="imagen_carrusel img3"></div>
+          </div>
+        </div>
+        <div class="boton btn_right" (click)="bandaDer()" [ngStyle]="{'opacity': opaDer, 'cursor': opaDer == 1? 'pointer': 'default'}"></div>
+      </div>
+    </div>
+    <div class="texto">
+      <h1><b>Logro Personal:</b></h1>
+      <h4>He logrado presentar frente a mucha gente un proyecto editado por mí:</h4>
+      <p>Durante el transcurso del 2019 he realizado un curso de cine y como proyecto final del año hicimos un cortometraje basado en el conocido cuento de "Corazón Delator" el cual presentamos el 3 de Diciembre de ese mismo año en el teatro de la casa de la juventud de san isidro. Este fue presentado ante al rededor de 100 personas y fue todo un éxito.</p>
+      <div class="boton_cortometraje">Ver Cortometraje</div>
+    </div>
+  </div>
+</div>

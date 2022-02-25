@@ -1,0 +1,86 @@
+<div class="main_box">
+  <h1>LUKITASEDITS</h1>
+  <video src="/assets/videos/lukitasedits/Banner animado.mp4" autoplay muted loop (mouseover)="mouseOver=false">
+  </video>
+</div>
+<div class="mensaje_box" (mouseover)="mouseOver=false">
+  <span [ngStyle]="{'left': leftText + 'px'}"><b>"Mi meta es poder plasmar cualquier idea en una pantalla por mas <br/> compleja que sea, incluso darles una interactividad"</b></span>
+  <br/><br/>
+  <h6 >Lucas Petersen</h6>
+</div>
+<div class="galeria_animaciones" [ngStyle]="{'background-image': 'url(/assets/images/miniaturas/'+ animaciones[indice].nombre + '.jpg)'}" (mouseover)="mouseOver=true">
+  <div class="color-overlay">
+    <div [ngStyle]="{'opacity': (indice > 0)?'1':'0'}" class="btn_mov btn_izquierda" *ngIf="mouseOver" (click)="anteriorImagen()"></div>
+    <div class="item_central" >
+      <div class="titulo"><b>{{animaciones[indice].titulo}}</b></div>
+      <div class="play" (click)="abrirReproductor()">
+        <div class="btn_play"></div>
+        <span style="color:aliceblue;
+                    font-size: 20px;
+                    text-decoration: underline;">
+                          Reproducir video</span>
+        </div>
+      </div>
+    <div [ngStyle]="{'opacity': (indice < animaciones.length-1)?'1':'0'}" class="btn_mov btn_derecha" *ngIf="mouseOver" (click)="siguienteImagen()"></div>
+  </div>
+</div>
+<div class="programacion_box">
+  <span class="programacion_titulo"><b>PROGRAMACIÓN</b></span>
+  <div class="lenguajes">
+    <div class="lenguaje delphi">
+      <div class="imagen_lenguaje delphi_ico" routerLink="/programacion"></div>
+      <b class= "nombre_lenguaje">DELPHI</b>
+    </div>
+    <div class="lenguaje java">
+      <div class="imagen_lenguaje java_ico" routerLink="/programacion"></div>
+      <b class="nombre_lenguaje">JAVA</b>
+    </div>
+    <div class="lenguaje web">
+      <div class="imagen_lenguaje web_ico" routerLink="/programacion"></div>
+      <b class="nombre_lenguaje">WEB</b>
+    </div>
+  </div>
+</div>
+<div class="experience_box">
+  <div class="box twitch_box">
+    <div class="descripcion">
+      <h1> <b>MI EXPERIENCIA CON TWITCH</b></h1>
+      <br>
+      <span>¿Quiéres crecer como streamer?</span>
+      <br>
+      <p>Con el tiempo he tenido la oportunidad de colaborar con varios creadores de contenido en la plataforma de twitch, gracias a esto adquirí un conocimiento avanzado sobre la creación de overlays, escenas y alertas a través de una técnica de animación.</p>
+      <div class="ver_mas" (click)="routeToTwitch()">ver más</div>
+    </div>
+    <div class="box_img twitch_img"></div>
+  </div>
+  <div class="separador_box"> </div>
+  <div class=" box emprendimientos_box">
+    <div class="box_img emprendimientos_img"></div>
+    <div class="descripcion">
+      <h1><b>MI EXPERIENCIA CON EMPRENDIMIENTOS</b></h1>
+      <br>
+      <span>¿Quieres llevar tu emprendimiento a otro nivel?</span>
+      <br>
+      <p>Me encargué de la edición visual de varios emprendimientos. Desde la creación de logos y flyers hasta el desarrollo de cubiertas para agendas y proyectos animados.</p>
+      <div class="ver_mas" (click)="routeToEmprendimientos()">ver más</div>
+    </div>
+  </div>
+</div>
+<div class="form-contacto">
+  <h1 style="color: aliceblue;">PONTE EN CONTACTO</h1>
+  <span style="color: aliceblue; margin: 20px; font-size: 14.5px; text-align: center;">¿Te interesa saber más sobre mi trabajo o sobre cómo podemos colaborar en algún proyecto? Contáctame hoy mismo.<br><br>lukas.petersen77@gmail.com</span>
+  <form
+  action="https://formspree.io/f/mjvlwozy"
+  method="POST"
+  autocomplete="off"
+  >
+    <div class="info_personal">
+      <input type="text" name="name"  placeholder="Nombre" required>
+      <input type="email" name="email"  placeholder="Email" required>
+    </div>
+    <input type="text" name="asunto" placeholder="Asunto..." required>
+    <textarea name="message" placeholder="Escribe tu mensaje aquí..." required></textarea>
+    <!-- your other form fields go here -->
+    <button type="submit">Enviar</button>
+  </form>
+</div>

@@ -1,0 +1,5 @@
+<app-header *ngIf="!reproductor && !reproductorTwitch"></app-header>
+<app-animaciones class="" *ngIf="reproductor"></app-animaciones>
+<app-reproductor-twitch *ngIf="reproductorTwitch"></app-reproductor-twitch>
+<router-outlet *ngIf="!reproductor && !reproductorTwitch"></router-outlet>
+<app-footer *ngIf="!reproductor && !reproductorTwitch"></app-footer>

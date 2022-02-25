@@ -1,0 +1,111 @@
+.fondo{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: aliceblue;
+  flex-direction: column;
+}
+
+.fondo .emprendimiento{
+  background-color: rgb(175, 245, 221);
+  width: 65%;
+  margin: 30px;
+  display: flex;
+}
+
+.fondo .emprendimiento .texto{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fondo .emprendimiento .texto .titulo{
+  height: 30%;
+  width: 100%;
+  padding-left: 10%;
+  padding-top: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.fondo .emprendimiento .texto .descripcion{
+  padding: 10%;
+  height: 70%;
+  width: 100%;
+}
+
+.fondo .emprendimiento .galeria{
+  margin: 20px 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fondo .emprendimiento .galeria .boton{
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+}
+
+.btn_izq{
+  background-image: url(/assets/images/botones/btn_left.png);
+}
+
+.btn_der{
+  background-image: url(/assets/images/botones/btn_right.png);
+}
+
+.fondo .emprendimiento .galeria .imagenes{
+  width: 475px;
+  height: 475px;
+  background-color: black;
+  background-position: center center;
+  overflow: hidden;
+}
+
+.fondo .emprendimiento .galeria .imagenes .banda{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  transition: 1s all;
+  position: relative;
+}
+
+.fondo .emprendimiento .galeria .imagenes .banda div{
+  background-size: cover;
+  background-position: center center;
+  width: 475px;
+  height: 100%;
+}
+
+.fondo .emprendimiento .galeria .imagenes .banda video{
+  height: 100%;
+  width: 475px;
+}
+
+@media(max-width:1000px){
+  .fondo .emprendimiento{
+    flex-direction: column;
+  }
+
+  .fondo .emprendimiento .galeria{
+    width: 100%;
+  }
+
+  .fondo .emprendimiento .texto .titulo{
+    transition: all 0.5s ease;
+    justify-content: center;
+  }
+
+  .fondo .emprendimiento .texto .descripcion{
+    text-align: center;
+  }
+
+  .fondo .emprendimiento .galeria .imagenes{
+    width: 80%;
+  }
+}

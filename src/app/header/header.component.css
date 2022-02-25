@@ -1,0 +1,132 @@
+header {
+  background-color: white;
+  min-height: 65px;
+  max-width: 100%;
+  overflow:hidden;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logotipo {
+  margin: 0 50px;
+  background-image: url('/assets/images/lukitasedits/isologotipo.png');
+  background-size: cover;
+  height: 45px;
+  width: 65px;
+  cursor: pointer;
+}
+
+
+.items{
+  width: 800px;
+  margin: 0 0px 0 0;
+  display: flex;
+  flex: nowrap;
+  transition: transform 0.5s ease;
+}
+
+.items span{
+  font-size: 15px;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.items span:hover{
+  text-shadow: 0 0px 2px rgba(0, 0, 0, 0.342);
+}
+
+#item1{
+  flex-shrink: 5;
+}
+
+.btn_menu{
+  position:absolute;
+  top: -100px;
+  left: 85%;
+  background-color: rgb(228, 249, 255);
+  box-shadow: 0 2px 3px rgba(0,0, 0, .6);
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+  border: 1px black solid;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.btn_menu .linea{
+  box-shadow: 0px 1px 3px rgb(0, 0, 0);
+  margin: 4px;
+  border-radius: 5px;
+  background-color: rgb(123, 79, 173);
+  width: 70%;
+  height: 4px;
+}
+
+#linea2{
+  width: 25px;
+}
+
+#linea3{
+  width: 12px;
+}
+
+.btn_menu:hover{
+  box-shadow: 0px 0.5px 3px rgb(0, 0, 0);
+
+  transform: translatey(2px);
+  background-color: rgb(190, 255, 255);
+}
+
+@media(max-width: 1010px) {
+  .btn_menu{
+    top: 27px;
+
+  }
+  .items{
+    transform: translateY(-100px);
+    width: 0;
+  }
+}
+
+.fondo-negro{
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fondo-negro .item{
+  color: aliceblue;
+  text-decoration: none;
+  margin: 2%;
+  cursor: pointer;
+}
+
+.fondo-negro .item:hover{
+  transition: all 0.5s ease;
+  text-shadow: 0 0 10px white;
+}
+
+
+.btn_cerrar{
+  position: relative;
+  left: 225px;
+  cursor: pointer;
+}
+
+.btn_cerrar span{
+  transform: translateX(150px);
+  font-size: 25px;
+  text-align: right;
+  color: white;
+}

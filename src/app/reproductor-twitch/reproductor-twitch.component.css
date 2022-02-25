@@ -1,0 +1,135 @@
+.fondo{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  position: relative;
+}
+
+.boton_cerrar{
+  margin: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  background-image: url(/assets/images/botones/btn_cerrar.png);
+  background-size: cover;
+}
+
+.titulo_emprendimiento{
+  position: relative;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  top: 50px;
+}
+
+.seccion_media{
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  top: 130px;
+}
+
+.cuadro{
+  position: relative;
+  margin: auto;
+  width: 60%;
+  height: 100%;
+  background-color: #3f366f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 3px 4px black;
+}
+
+.cuadro .reproductor{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.reproductor .banda{
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: +1;
+}
+
+.fondo_negro{
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+}
+
+.banda video{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+}
+
+.banda .imagen{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+background-color: black;
+}
+
+.banda .info{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  z-index: 2;
+  transition: 0.5s all ease;
+}
+
+.cuadro .reproductor .info:hover{
+  opacity: 1;
+}
+
+.cuadro .reproductor .info h1{
+  color: white;
+}
+
+.items{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10px;
+  bottom: 30px;
+}
+
+.items .item{
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 10px;
+  height: 10px;
+  border: solid  white 1.5px;
+  border-radius: 10px;
+  margin: 0 2%;
+  cursor: pointer;
+  transition: 0.2s all ease;
+}
+
+.item:hover{
+  box-shadow: 0 0 5px white;
+}
