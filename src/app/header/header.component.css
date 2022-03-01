@@ -11,7 +11,7 @@ header {
 
 .logotipo {
   margin: 0 50px;
-  background-image: url('/assets/images/lukitasedits/isologotipo.png');
+  /*background-image: url('/assets/images/lukitasedits/isologotipo.png');*/
   background-size: cover;
   height: 45px;
   width: 65px;
