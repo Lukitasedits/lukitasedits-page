@@ -3,7 +3,7 @@
       "id": 1,
       "titulo": "Suavelanave y diavolando",
       "descripcion": "Me encargué de adaptar las ilustraciones de ambos emprendimientos para la realización de cubiertas para agendas que recorren toda la argentina.",
-      "ruta": "/assets/emprendimientos_media/suavelanave/",
+      "ruta": "assets/emprendimientos_media/suavelanave/",
       "trabajos": [
           {
               "idmedia": 1,
@@ -56,7 +56,7 @@
       "id": 2,
       "titulo": "Natalia Cerdán",
       "descripcion": "Retoqué fotos de sus productos  para una presentación profesional, además de realizarle una animación publicitaria para la venta de un producto en específico.",
-      "ruta": "/assets/emprendimientos_media/natalia_cerdan/",
+      "ruta": "assets/emprendimientos_media/natalia_cerdan/",
       "trabajos": [
           {
               "idmedia": 10,
@@ -84,7 +84,7 @@
       "id": 3,
       "titulo": "Alma Plata",
       "descripcion": "Diseñé el logo de su emprendimiento, además de realizarle una animación 3D en modo de presentación basada en su logotipo.",
-      "ruta": "/assets/emprendimientos_media/alma_plata/",
+      "ruta": "assets/emprendimientos_media/alma_plata/",
       "trabajos": [
           {
               "idmedia": 14,
@@ -102,7 +102,7 @@
       "id": 4,
       "titulo": "Fepo",
       "descripcion": "Desarrollé un edit surrealista a partir de una idea del cliente para la portada de su single en spotify.",
-      "ruta": "/assets/emprendimientos_media/fepo/",
+      "ruta": "assets/emprendimientos_media/fepo/",
       "trabajos": [
           {
               "idmedia": 16,
@@ -125,7 +125,7 @@
       "id": 5,
       "titulo": "Megadat",
       "descripcion": "Animación 3D con formato instagram stories hecha para publicitar su emprendimiento. También creé su logo.",
-      "ruta": "/assets/emprendimientos_media/megadat/",
+      "ruta": "assets/emprendimientos_media/megadat/",
       "trabajos": [
           {
               "idmedia": 19,

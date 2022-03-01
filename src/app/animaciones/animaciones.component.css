@@ -11,7 +11,7 @@
 }
 
 .btn_cerrar{
-  background-image: url("/assets/images/botones/Btn_close.png");
+  background-image: url("~src/assets/images/botones/Btn_close.png");
   background-size: cover;
   width: 30px;
   height: 30px;
@@ -20,9 +20,24 @@
   align-self: flex-end;
 }
 
+.cover .medio{
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boton_reproductor{
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  background-size: cover;
+}
+
 .reproductor{
   background-color: rgba(0, 0, 0, 0.8);
-  height: 450px  ;
+  height: 100%;
   width: 70%;
   display: flex;
   justify-content: center;
@@ -81,7 +96,7 @@ br{
   display: flex;
 }
 
-.boton{
+.boton_miniaturas{
   position: absolute;
   cursor: pointer;
   margin: 10px;
@@ -95,12 +110,12 @@ br{
 }
 
 .btn_izq{
-  background-image: url("/assets/images/botones/Btn_left.png");
+  background-image: url("~src/assets/images/botones/Btn_left.png");
 }
 
 
 .btn_der{
-  background-image: url(/assets/images/botones/Btn_right.png);
+  background-image: url(~src/assets/images/botones/Btn_right.png);
 }
 
 .cover .boton{

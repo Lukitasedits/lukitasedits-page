@@ -26,7 +26,7 @@
 .biografia .imagen{
   width: 40%;
   height: 100%;
-  background-image: url('/assets/images/informacion_personal/Lucas.jpg');
+  background-image: url('~src/assets/images/informacion_personal/Lucas.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -95,7 +95,7 @@
 .conocimientos .imagen{
   width: 40%;
   height: 100%;
-  background-image: url('/assets/images/informacion_personal/Ideas_que_florecen.jpg');
+  background-image: url('~src/assets/images/informacion_personal/Ideas_que_florecen.jpg');
   background-size: cover;
   background-position: center;
 }
@@ -109,7 +109,7 @@
 .logro .imagen{
   width: 40%;
   height: 100%;
-  background-image: url('/assets/images/informacion_personal/Portada_cine.jpg');
+  background-image: url('~src/assets/images/informacion_personal/Portada_cine.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -154,11 +154,11 @@
 }
 
 .btn_left{
-  background-image: url('/assets/images/botones/Btn_left.png');
+  background-image: url('~src/assets/images/botones/Btn_left.png');
 }
 
 .btn_right{
-  background-image: url('/assets/images/botones/Btn_right.png');
+  background-image: url('~src/assets/images/botones/Btn_right.png');
 }
 
 .carrusel .vista{
@@ -184,15 +184,15 @@
 }
 
 .img1{
-  background-image: url('/assets/images/informacion_personal/cine/Cine1.jpeg');
+  background-image: url('~src/assets/images/informacion_personal/cine/Cine1.jpeg');
 }
 
 .img2{
-  background-image: url('/assets/images/informacion_personal/cine/Cine2.jpeg');
+  background-image: url('~src/assets/images/informacion_personal/cine/Cine2.jpeg');
 }
 
 .img3{
-  background-image: url('/assets/images/informacion_personal/cine/Cine3.jpeg');
+  background-image: url('~src/assets/images/informacion_personal/cine/Cine3.jpeg');
 }
 
 .boton_cortometraje{

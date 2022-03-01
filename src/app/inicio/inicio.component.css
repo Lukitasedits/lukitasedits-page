@@ -1,7 +1,7 @@
 
 
 .main_box {
-  background-image: url('/assets/images/lukitasedits/Banner_lukitasedits.jpg');
+  background-image: url('~src/assets/images/lukitasedits/Banner_lukitasedits.jpg');
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -21,6 +21,8 @@
   font-size: 65px;
   z-index: +1;
 }
+
+
 
 .main_box video {
   position: absolute;
@@ -90,7 +92,7 @@
 
 .btn_play{
   margin-right: 10px;
-  background-image: url('/assets/images/botones/Btn_play.png');
+  background-image: url('~src/assets/images/botones/Btn_play.png');
   background-size: cover;
   height: 40px;
   width: 40px;
@@ -106,11 +108,11 @@
   }
 
 .btn_izquierda{
-  background-image: url('/assets/images/botones/Btn_left.png');
+  background-image: url('~src/assets/images/botones/Btn_left.png');
 }
 
 .btn_derecha{
-  background-image: url('/assets/images/botones/Btn_right.png');
+  background-image: url('~src/assets/images/botones/Btn_right.png');
 }
 
 .item_central{
@@ -168,15 +170,15 @@
 }
 
 .delphi_ico{
-  background-image: url(/assets/images/iconos_lenguajes/Delphi_ICO.png);
+  background-image: url(~src/assets/images/iconos_lenguajes/Delphi_ICO.png);
 }
 
 .java_ico{
-  background-image: url(/assets/images/iconos_lenguajes/Java_ICO.png);
+  background-image: url('~src/assets/images/iconos_lenguajes/Java_ICO.png');
 }
 
 .web_ico{
-  background-image: url(/assets/images/iconos_lenguajes/Web_ICO.png);
+  background-image: url(~src/assets/images/iconos_lenguajes/Web_ICO.png);
 }
 
 .experience_box{
@@ -212,13 +214,13 @@
 .experience_box .box .box_img {
   height: 100%;
   width: 50%;
-  background-image: url(/assets/images/portadas_experiencia/Twitch.jpg);
+  background-image: url(~src/assets/images/portadas_experiencia/Twitch.jpg);
   background-size: cover;
   background-position: center center;
 }
 
 .experience_box .box .emprendimientos_img{
-  background-image: url(assets/images/portadas_experiencia/Emprendimientos.jpg);
+  background-image: url(~src/assets/images/portadas_experiencia/Emprendimientos.jpg);
   background-size: cover;
   background-position: center center;
 }
@@ -284,7 +286,7 @@
 .form-contacto{
   height: 700px;
   width: 100%;
-  background-image: url('./assets/images/extras/Fondo_contacto.jpg');
+  background-image: url('~src/assets/images/extras/Fondo_contacto.jpg');
   background-position: center center;
   background-size: cover;
   background-color: rgb(39, 31, 53);

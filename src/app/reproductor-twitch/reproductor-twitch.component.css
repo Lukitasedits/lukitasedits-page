@@ -42,17 +42,17 @@
   position: absolute;
   right: 0;
   top: 0;
-  background-image: url('/assets/images/botones/Btn_close.png');
+  background-image: url('~src/assets/images/botones/Btn_close.png');
 }
 
 .btn_left{
   margin-left: 30px;
-  background-image: url('/assets/images/botones/Btn_left.png');
+  background-image: url('~src/assets/images/botones/Btn_left.png');
 }
 
 .btn_right{
   margin-right: 30px;
-  background-image: url('/assets/images/botones/Btn_right.png');
+  background-image: url('~src/assets/images/botones/Btn_right.png');
 }
 
 .cuadro{

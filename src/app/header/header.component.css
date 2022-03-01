@@ -44,7 +44,7 @@ header {
 .btn_menu{
   position:absolute;
   top: -100px;
-  left: 85%;
+  right: 20px;
   background-color: rgb(228, 249, 255);
   box-shadow: 0 2px 3px rgba(0,0, 0, .6);
   height: 50px;

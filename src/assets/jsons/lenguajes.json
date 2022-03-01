@@ -1,6 +1,6 @@
 [
   {
-    "imagen": "/assets/images/iconos_lenguajes/Java_ICO.png",
+    "imagen": "assets/images/iconos_lenguajes/Java_ICO.png",
     "nombre": "Java",
     "tecnologia": [
       {
@@ -22,7 +22,7 @@
     ]
   },
   {
-    "imagen": "/assets/images/iconos_lenguajes/Web_ICO.png",
+    "imagen": "assets/images/iconos_lenguajes/Web_ICO.png",
     "nombre": "Web",
     "tecnologia": [
       {
@@ -40,7 +40,7 @@
     ]
   },
   {
-    "imagen": "/assets/images/iconos_lenguajes/Delphi_ICO.png",
+    "imagen": "assets/images/iconos_lenguajes/Delphi_ICO.png",
     "nombre": "Delphi",
     "tecnologia": [
       {

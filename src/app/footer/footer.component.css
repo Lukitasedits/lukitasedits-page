@@ -23,11 +23,11 @@
 }
 
 .wpp_ico{
-  background-image: url('/assets/images/redes_sociales/Whatsapp.png');
+  background-image: url('~src/assets/images/redes_sociales/Whatsapp.png');
 }
 
 .ig_ico{
-  background-image: url('/assets/images/redes_sociales/Instagram.png');
+  background-image: url('~src/assets/images/redes_sociales/Instagram.png');
 }
 
 .red a{

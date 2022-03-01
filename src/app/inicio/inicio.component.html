@@ -1,6 +1,6 @@
 <div class="main_box">
   <h1>LUKITASEDITS</h1>
-  <video src="/assets/videos/lukitasedits/Banner_animado.mp4" autoplay muted loop (mouseover)="mouseOver=false">
+  <video src="assets/videos/lukitasedits/Banner_animado.mp4" autoplay muted loop (mouseover)="mouseOver=false">
   </video>
 </div>
 <div class="mensaje_box" (mouseover)="mouseOver=false">
@@ -8,9 +8,9 @@
   <br/><br/>
   <h6 >Lucas Petersen Frers</h6>
 </div>
-<div class="galeria_animaciones" [ngStyle]="{'background-image': 'url(/assets/images/miniaturas/'+ animaciones[indice].nombre + '.jpg)'}" (mouseover)="mouseOver=true">
+<div class="galeria_animaciones" [ngStyle]="{'background-image': 'url(assets/images/miniaturas/'+ animaciones[indice].nombre + '.jpg)'}" (mouseover)="mouseOver=true">
   <div class="color-overlay">
-    <div [ngStyle]="{'opacity': (indice > 0)?'1':'0'}" class="btn_mov btn_izquierda" *ngIf="mouseOver" (click)="anteriorImagen()"></div>
+    <div [ngStyle]="{'opacity': (indice > 0)?'1':'0', 'cursor': (indice > 0)?'pointer':'default'}" class="btn_mov btn_izquierda" *ngIf="mouseOver" (click)="anteriorImagen()"></div>
     <div class="item_central" >
       <div class="titulo"><b>{{animaciones[indice].titulo}}</b></div>
       <div class="play" (click)="abrirReproductor()">
@@ -18,10 +18,10 @@
         <span style="color:aliceblue;
                     font-size: 20px;
                     text-decoration: underline;">
-                          Reproducir video</span>
+                          Reproducir animación</span>
         </div>
       </div>
-    <div [ngStyle]="{'opacity': (indice < animaciones.length-1)?'1':'0'}" class="btn_mov btn_derecha" *ngIf="mouseOver" (click)="siguienteImagen()"></div>
+    <div [ngStyle]="{'opacity': (indice < animaciones.length-1)?'1':'0', 'cursor': (indice < animaciones.length-1)?'pointer':'default'}" class="btn_mov btn_derecha" *ngIf="mouseOver" (click)="siguienteImagen()"></div>
   </div>
 </div>
 <div class="programacion_box">
