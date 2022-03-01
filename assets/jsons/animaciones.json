@@ -1,0 +1,62 @@
+[
+  {
+    "nombre": "Annie",
+    "titulo": "Movimiento natural",
+    "descripcion": "Esta es una animación realizada a partir de una imagen con la intensión de crear un movimiento natural sobre el personaje y la escena."
+  },
+  {
+    "nombre": "Fluido",
+    "titulo": "Simulación Líquido",
+    "descripcion": "Una simulación de líquidos para poner en práctica el plugin Real Flow del Cinema 4D."
+  },
+  {
+    "nombre": "Kennedy",
+    "titulo": "La Gran Batalla",
+    "descripcion": "Práctica de trackeo 3d para integrar objetos digitales en un video real."
+  },
+  {
+    "nombre": "Lampara",
+    "titulo": "Globo Aerostático",
+    "descripcion": "Animación 3D con el objetivo de practicar el plugin 'Plexus' de After Effects."
+  },
+  {
+    "nombre": "Mano",
+    "titulo": "Mano Desintegrándose",
+    "descripcion": "Animación 3D de mano desintegrándose con el fin de practicar partículas y fractura de elementos."
+  },
+  {
+    "nombre": "Megadat",
+    "titulo": "Publicidad Animada Megadat",
+    "descripcion": "Publicidad animada formato instagram stories para la publicidad de un emprendimiento de reparaciones de laptops y servicio técnico."
+  },
+  {
+    "nombre": "Motorola",
+    "titulo": "Animación Celular",
+    "descripcion": "Modelado y animación 3D de celular en modo de presentación de producto."
+  },
+  {
+    "nombre": "Nado",
+    "titulo": "Presentación Animada",
+    "descripcion": "Este es una animación realizada con el fin de publicitar un producto. Una escultura hecha de cerámica de un hombre nadando."
+  },
+  {
+    "nombre": "PcAnimacion",
+    "titulo": "Animación PC",
+    "descripcion": "Animación 3D de mi Pc en forma de presentación."
+  },
+  {
+    "nombre": "SpotTwitchonario",
+    "titulo": "Spot Publicitario Twitchonario",
+    "descripcion": "Esta es una animación diseñada y desarrollada por mí con el objetivo de explicar y publicitar la participación del juego de manera dinámica y gráfica."
+  },
+  {
+    "nombre": "StarWars",
+    "titulo": "Animación Star Wars",
+    "descripcion": "Animación 2D ambientada en Star Wars con ilustración hecha por @lucasordonezilustrador."
+  },
+  {
+    "nombre": "TwitchonarioUniversal",
+    "titulo": "Especial Cine Trailer",
+    "descripcion": "La idea era representar la temática cinemática para crear una animación para publicitar un stream con invitados especiales."
+  }
+]

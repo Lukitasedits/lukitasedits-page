@@ -1,0 +1,56 @@
+[
+  {
+    "imagen": "/assets/images/iconos_lenguajes/Java_ICO.png",
+    "nombre": "Java",
+    "tecnologia": [
+      {
+        "nombre": "Java 8",
+        "descripcion": "Java 8 trajo consigo la programación funcional y APIs muy interesantes como Stream, Optional y Date Time."
+      },
+      {
+        "nombre": "JDBC",
+        "descripcion": "Mediante JDBC, java es capaz de interactuar con bases de datos y así, manejar datos de una forma mucho más poderosa."
+      },
+      {
+        "nombre": "JUnit 5",
+        "descripcion": "Junit 5 es una dependencia que nos permite testear de una forma muy práctica nuestro código en Java."
+      },
+      {
+        "nombre": "Spring Framework",
+        "descripcion": "Con él, podemos administrar de forma desacoplada y con muchas facilidades el back-end de una aplicación con Java."
+      }
+    ]
+  },
+  {
+    "imagen": "/assets/images/iconos_lenguajes/Web_ICO.png",
+    "nombre": "Web",
+    "tecnologia": [
+      {
+        "nombre": "HTML",
+        "descripcion": "El lenguaje básico del desarrollo web, con él establecemos el marcado de la estructura de nuestra página."
+      },
+      {
+        "nombre": "CSS",
+        "descripcion": "Este lenguaje sirve para configurarlos distintos estilos que podemos aplicarle a nuestra estructura HTML."
+      },
+      {
+        "nombre": "Angular",
+        "descripcion": "Este Framework desarrollado en typescript nos sirve para administrar de forma reactiva los datos del front-end."
+      }
+    ]
+  },
+  {
+    "imagen": "/assets/images/iconos_lenguajes/Delphi_ICO.png",
+    "nombre": "Delphi",
+    "tecnologia": [
+      {
+        "nombre": "VCL",
+        "descripcion": "Una librería muy completa con componentes gráficos y no visuales que nos permiten manejar datos."
+      },
+      {
+        "nombre": "Fire Mokey",
+        "descripcion": "Es una librería del mismo estilo que VCL, con la gran diferencia de que podemos generar aplicaciones multiplataforma."
+      }
+    ]
+  }
+]
