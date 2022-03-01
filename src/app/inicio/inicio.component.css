@@ -218,7 +218,7 @@
 }
 
 .experience_box .box .emprendimientos_img{
-  background-image: url(/assets/images/portadas_experiencia/Emprendimientos.jpg);
+  background-image: url(assets/images/portadas_experiencia/Emprendimientos.jpg);
   background-size: cover;
   background-position: center center;
 }
@@ -284,7 +284,7 @@
 .form-contacto{
   height: 700px;
   width: 100%;
-  background-image: url('/assets/images/extras/Fondo_contacto.jpg');
+  background-image: url('./assets/images/extras/Fondo_contacto.jpg');
   background-position: center center;
   background-size: cover;
   background-color: rgb(39, 31, 53);
