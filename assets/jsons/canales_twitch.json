@@ -1,10 +1,10 @@
 [
   {
     "nombre": "Twitchonario",
-    "preview": "~src/assets/twitchs/Twitchonario_preview.mp4",
+    "preview": "assets/twitchs/Twitchonario_preview.mp4",
     "descripcion": "Canal de preguntas y respuestas con invitados especiales",
     "resumen": "Me ha tocado ser el diseñador de absolutamente todo lo visual que compone a este programa de entretenimiento, desde el desarrollo de Escenas, Overlays, flyers, videos y animaciones publicitarias hasta el desarrollo del juego mismo.",
-    "rutaMedia": "~src/assets/twitchs/twitchonario/",
+    "rutaMedia": "assets/twitchs/twitchonario/",
     "media": [
       {
         "idmedia": 0,
@@ -51,10 +51,10 @@
   },
   {
     "nombre": "Franzanettini",
-    "preview": "~src/assets/twitchs/Franza_preview.mp4",
+    "preview": "assets/twitchs/Franza_preview.mp4",
     "descripcion": "Canal de IRL",
     "resumen": "Realicé para este canal diseños personalizados para botones que dirigen hacia las redes sociales además de un flyer publicitando un especial de 12 horas.",
-    "rutaMedia": "~src/assets/twitchs/franzanettini/",
+    "rutaMedia": "assets/twitchs/franzanettini/",
     "media": [
       {
         "idmedia": 0,
@@ -102,10 +102,10 @@
   },
   {
     "nombre": "TTVMPSGHOST",
-    "preview": "~src/assets/twitchs/Ghost_preview.mp4",
+    "preview": "assets/twitchs/Ghost_preview.mp4",
     "descripcion": "Gameplays de Minecraft Técnico",
     "resumen": "Diseñé y desarrollé 3 tipos de alertas animadas y una barra contadora de suscriptores ambientada en minecraft.",
-    "rutaMedia": "~src/assets/twitchs/ttvmpsghost/",
+    "rutaMedia": "assets/twitchs/ttvmpsghost/",
     "media": [
       {
         "idmedia": 0,
@@ -135,7 +135,7 @@
   },
     {
     "nombre": "MaiiArraiz",
-    "preview": "~src/assets/twitchs/MaiiArraiz_preview.mp4",
+    "preview": "assets/twitchs/MaiiArraiz_preview.mp4",
     "descripcion": "Canal de IRL Y Gameplays",
     "resumen": "Cree una escena animada para el comienzo de su stream, una escena estática para cuando esté 'Offline', un pequeño spot publicitario, y animé el marco de webcam.",
     "rutaMedia": "~src/assets/twitchs/maiiarraiz/",
