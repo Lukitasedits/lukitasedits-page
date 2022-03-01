@@ -1,0 +1,169 @@
+[
+  {
+    "nombre": "Twitchonario",
+    "preview": "/assets/twitchs/Twitchonario_preview.mp4",
+    "descripcion": "Canal de preguntas y respuestas con invitados especiales",
+    "resumen": "Me ha tocado ser el diseñador de absolutamente todo lo visual que compone a este programa de entretenimiento, desde el desarrollo de Escenas, Overlays, flyers, videos y animaciones publicitarias hasta el desarrollo del juego mismo.",
+    "rutaMedia": "/assets/twitchs/twitchonario/",
+    "media": [
+      {
+        "idmedia": 0,
+        "nombre": "Flyer_habitual",
+        "extension": "mp4",
+        "titulo": "Flyer Habitual"
+      },
+      {
+        "idmedia": 1,
+        "nombre": "Flyer_futbol",
+        "extension": "mp4",
+        "titulo": "Flyer Fútbol"
+      },
+      {
+        "idmedia": 2,
+        "nombre": "Flyer_cine",
+        "extension": "mp4",
+        "titulo": "Flyer Cine"
+      },
+      {"idmedia": 3,
+        "nombre": "Flyer_musica",
+        "extension": "mp4",
+        "titulo": "Flyer Música"
+      },
+      {
+        "idmedia": 4,
+        "nombre": "Overlay",
+        "extension": "mp4",
+        "titulo": "Overlay Juego"
+      },
+      {
+        "idmedia": 5,
+        "nombre": "Logo3D",
+        "extension": "mp4",
+        "titulo": "Notificación Subs"
+      },
+      {
+        "idmedia": 6,
+        "nombre": "Spot_publicitario",
+        "extension": "mp4",
+        "titulo": "spot Publicitario"
+      }
+    ]
+  },
+  {
+    "nombre": "Franzanettini",
+    "preview": "/assets/twitchs/Franza_preview.mp4",
+    "descripcion": "Canal de IRL",
+    "resumen": "Realicé para este canal diseños personalizados para botones que dirigen hacia las redes sociales además de un flyer publicitando un especial de 12 horas.",
+    "rutaMedia": "/assets/twitchs/franzanettini/",
+    "media": [
+      {
+        "idmedia": 0,
+        "nombre": "12_horas",
+        "extension": "jpg",
+        "titulo": "Banner 12 Horas"
+      },
+      {
+        "idmedia": 1,
+        "nombre": "Banner_discord",
+        "extension": "jpg",
+        "titulo": "Banner Discord"
+      },
+      {
+        "idmedia": 2,
+        "nombre": "Banner_donaciones",
+        "extension": "jpg",
+        "titulo": "Banner Donaciones"
+      },
+      {
+        "idmedia": 3,
+        "nombre": "Banner_instagram",
+        "extension": "jpg",
+        "titulo": "Banner Instagram"
+      },
+      {
+        "idmedia": 4,
+        "nombre": "Banner_sobre_mi",
+        "extension": "jpg",
+        "titulo": "Banner Información"
+      },
+      {
+        "idmedia": 5,
+        "nombre": "Banner_twitter",
+        "extension": "jpg",
+        "titulo": "Banner Twitter"
+      },
+      {
+        "idmedia": 6,
+        "nombre": "Banner_youtube",
+        "extension": "jpg",
+        "titulo": "Banner Youtube"
+      }
+      ]
+  },
+  {
+    "nombre": "TTVMPSGHOST",
+    "preview": "/assets/twitchs/Ghost_preview.mp4",
+    "descripcion": "Gameplays de Minecraft Técnico",
+    "resumen": "Diseñé y desarrollé 3 tipos de alertas animadas y una barra contadora de suscriptores ambientada en minecraft.",
+    "rutaMedia": "/assets/twitchs/ttvmpsghost/",
+    "media": [
+      {
+        "idmedia": 0,
+        "nombre": "Barra_de_hambre",
+        "extension": "mp4",
+        "titulo": "Contador de Subs"
+      },
+      {
+        "idmedia": 1,
+        "nombre": "Creeper",
+        "extension": "mp4",
+        "titulo": "Notificación bits"
+      },
+      {
+        "idmedia": 2,
+        "nombre": "Cubo",
+        "extension": "mp4",
+        "titulo": "Notifiación subs"
+      },
+      {
+        "idmedia": 3,
+        "nombre": "Enderman",
+        "extension": "mp4",
+        "titulo": "Notificación seguidor"
+      }
+      ]
+  },
+    {
+    "nombre": "MaiiArraiz",
+    "preview": "/assets/twitchs/MaiiArraiz_preview.mp4",
+    "descripcion": "Canal de IRL Y Gameplays",
+    "resumen": "Cree una escena animada para el comienzo de su stream, una escena estática para cuando esté 'Offline', un pequeño spot publicitario, y animé el marco de webcam.",
+    "rutaMedia": "/assets/twitchs/maiiarraiz/",
+    "media": [
+      {
+        "idmedia": 0,
+        "nombre": "Marco_animado",
+        "extension": "mp4",
+        "titulo": "Marco Animado"
+      },
+      {
+        "idmedia": 1,
+        "nombre": "Marzo8",
+        "extension": "mp4",
+        "titulo": "Publicidad Evento Storie Instagram"
+      },
+      {
+        "idmedia": 2,
+        "nombre": "Offline",
+        "extension": "jpg",
+        "titulo": "Escena Offline"
+      },
+      {
+        "idmedia": 3,
+        "nombre": "Ya_comenzamos",
+        "extension": "mp4",
+        "titulo": "Escena Ya Comenzamos"
+      }
+      ]
+  }
+]

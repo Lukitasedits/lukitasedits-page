@@ -1,0 +1,235 @@
+.fondo{
+  width: 100%;
+  height: auto;
+  background-color: aliceblue;
+}
+
+.informacion_personal{
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(14, 26, 44);
+}
+
+.informacion_personal h1{
+  color: azure;
+}
+
+.biografia{
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+
+.biografia .imagen{
+  width: 40%;
+  height: 100%;
+  background-image: url('/assets/images/informacion_personal/Lucas.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.texto{
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.biografia .texto{
+  background-color: rgb(207, 252, 249);
+}
+
+.conocimientos .texto{
+  background-color: rgb(234, 214, 247);
+  justify-content: flex-start;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.conocimientos .texto::-webkit-scrollbar{
+  width: 12px;
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.conocimientos .texto::-webkit-scrollbar-thumb{
+  width: 5px;
+  height: 1px;
+  background-color: #e9a8db;
+  border-radius: 10px;
+}
+
+.conocimientos{
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+
+.texto h1{
+  margin: 40px;
+}
+
+.biografia h1{
+  text-align: center;
+}
+
+.conocimientos h1{
+  width: 80%;
+  text-align: start;
+}
+
+.texto p{
+  text-align: center;
+}
+
+.texto .parrafo{
+  width: 80%;
+}
+
+
+.conocimientos .imagen{
+  width: 40%;
+  height: 100%;
+  background-image: url('/assets/images/informacion_personal/Ideas_que_florecen.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.logro{
+  width: 100%;
+  height: 600px;
+  display: flex;
+}
+
+.logro .imagen{
+  width: 40%;
+  height: 100%;
+  background-image: url('/assets/images/informacion_personal/Portada_cine.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logro .texto{
+  background-color: rgb(207, 252, 249);
+  padding: 80px;
+}
+
+.logro .texto h1{
+  text-align: center;
+}
+
+.logro .texto h4{
+  font-size: 20px;
+  text-align: center;
+}
+
+@media(max-width: 600px){
+  .logro .texto{
+    padding: 15px;
+  }
+}
+
+.carrusel{
+  width: 85%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrusel .boton{
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  cursor: pointer;
+  transition: 0.5s all;
+}
+
+.btn_left{
+  background-image: url('/assets/images/botones/Btn_left.png');
+}
+
+.btn_right{
+  background-image: url('/assets/images/botones/Btn_right.png');
+}
+
+.carrusel .vista{
+  width: 80%;
+  max-width: 400px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.vista .banda{
+  width: 1200px;
+  position: relative;
+  height: 400px;
+  background-color: #e9a8db;
+  display: flex;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+
+.imagen_carrusel{
+  width: 400px;
+  background-size: cover;
+}
+
+.img1{
+  background-image: url('/assets/images/informacion_personal/cine/Cine1.jpeg');
+}
+
+.img2{
+  background-image: url('/assets/images/informacion_personal/cine/Cine2.jpeg');
+}
+
+.img3{
+  background-image: url('/assets/images/informacion_personal/cine/Cine3.jpeg');
+}
+
+.boton_cortometraje{
+  margin: 10px;
+  width: 160px;
+  height: 35px;
+  background-color: #e9a8db;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s;
+  bottom: 0;
+}
+
+.boton_cortometraje:hover{
+  box-shadow: 0 2px 4px black;
+  bottom: 2px;
+}
+
+
+@media(max-width: 700px){
+  .logro{
+    flex-direction: column;
+    height: auto;
+  }
+  .logro .imagen{
+    width: 100%;
+  }
+
+  .logro .texto{
+    width: 100%;
+    height: auto;
+  }
+}

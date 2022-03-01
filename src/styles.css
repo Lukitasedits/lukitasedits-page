@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: linear-gradient(rgb(37, 11, 39), rgb(50, 11, 68));
+}
+
+body::-webkit-scrollbar {
+  width: 12px;     /* Tamaño del scroll en vertical */
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgb(88, 22, 90);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgb(103, 30, 105);
+}

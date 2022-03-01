@@ -1,0 +1,142 @@
+[
+  {
+      "id": 1,
+      "titulo": "Suavelanave y diavolando",
+      "descripcion": "Me encargué de adaptar las ilustraciones de ambos emprendimientos para la realización de cubiertas para agendas que recorren toda la argentina.",
+      "ruta": "/assets/emprendimientos_media/suavelanave/",
+      "trabajos": [
+          {
+              "idmedia": 1,
+              "nombre": "Logo_diavolando",
+              "extension": "png"
+          },
+          {
+              "idmedia": 2,
+              "nombre": "Logo_suavelanave",
+              "extension": "jpeg"
+          },
+          {
+              "idmedia": 3,
+              "nombre": "Material1",
+              "extension": "jpg"
+          },
+          {
+              "idmedia": 4,
+              "nombre": "Resultado1",
+              "extension": "jpg"
+          },
+          {
+              "idmedia": 5,
+              "nombre": "Material2",
+              "extension": "jpg"
+          },
+          {
+              "idmedia": 6,
+              "nombre": "Resultado2",
+              "extension": "jpg"
+          },
+          {
+              "idmedia": 7,
+              "nombre": "Material3",
+              "extension": "jpg"
+          },
+          {
+              "idmedia": 8,
+              "nombre": "Resultado3",
+              "extension": "jpg"
+          },
+          {
+              "idmedia": 9,
+              "nombre": "Agenda_video",
+              "extension": "mp4"
+          }
+      ]
+  },
+  {
+      "id": 2,
+      "titulo": "Natalia Cerdán",
+      "descripcion": "Retoqué fotos de sus productos  para una presentación profesional, además de realizarle una animación publicitaria para la venta de un producto en específico.",
+      "ruta": "/assets/emprendimientos_media/natalia_cerdan/",
+      "trabajos": [
+          {
+              "idmedia": 10,
+              "nombre": "Logo",
+              "extension": "jpg"
+          },
+          {
+              "idmedia": 11,
+              "nombre": "Material",
+              "extension": "jpg"
+          },
+          {
+              "idmedia": 12,
+              "nombre": "Resultado",
+              "extension": "jpg"
+          },
+          {
+              "idmedia": 13,
+              "nombre": "Nado",
+              "extension": "mp4"
+          }
+      ]
+  },
+  {
+      "id": 3,
+      "titulo": "Alma Plata",
+      "descripcion": "Diseñé el logo de su emprendimiento, además de realizarle una animación 3D en modo de presentación basada en su logotipo.",
+      "ruta": "/assets/emprendimientos_media/alma_plata/",
+      "trabajos": [
+          {
+              "idmedia": 14,
+              "nombre": "Logo",
+              "extension": "png"
+          },
+          {
+              "idmedia": 15,
+              "nombre": "Animacion_logo",
+              "extension": "mp4"
+          }
+      ]
+  },
+  {
+      "id": 4,
+      "titulo": "Fepo",
+      "descripcion": "Desarrollé un edit surrealista a partir de una idea del cliente para la portada de su single en spotify.",
+      "ruta": "/assets/emprendimientos_media/fepo/",
+      "trabajos": [
+          {
+              "idmedia": 16,
+              "nombre": "Portada",
+              "extension": "jpg"
+          },
+          {
+              "idmedia": 17,
+              "nombre": "Fepo_proceso",
+              "extension": "jpg"
+          },
+          {
+              "idmedia": 18,
+              "nombre": "Fepo_spotify",
+              "extension": "jpg"
+          }
+      ]
+  },
+  {
+      "id": 5,
+      "titulo": "Megadat",
+      "descripcion": "Animación 3D con formato instagram stories hecha para publicitar su emprendimiento. También creé su logo.",
+      "ruta": "/assets/emprendimientos_media/megadat/",
+      "trabajos": [
+          {
+              "idmedia": 19,
+              "nombre": "Logo",
+              "extension": "jpg"
+          },
+          {
+              "idmedia": 20,
+              "nombre": "Megadat",
+              "extension": "mp4"
+          }
+      ]
+  }
+]

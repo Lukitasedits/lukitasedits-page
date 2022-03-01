@@ -1,0 +1,111 @@
+.programacion_box{
+  width: 100%;
+  height: 500px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.programacion_box h1{
+  color: white;
+  z-index: 1;
+}
+
+.programacion_box p{
+  color: white;
+  margin: 30px;
+  max-width: 800px;
+  text-align: center;
+  z-index: 1;
+}
+
+.animation{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animation video{
+  height: 100%;
+  width: auto;
+}
+
+.fondo_lenguajes{
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.lenguaje{
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+}
+
+.lenguaje .lenguaje_presentacion{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lenguaje .lenguaje_presentacion .lenguaje_ico{
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.lenguaje .lenguaje_presentacion h1{
+  text-shadow: 0 0 3px black;
+}
+
+.informacion{
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.informacion .tecnologia{
+    width: 250px;
+    height: auto;
+    margin: 20px 70px;
+}
+
+.informacion .tecnologia h1{
+  text-align: center;
+}
+
+.informacion .tecnologia p{
+  text-align: center;
+}
+
+.lenguaje .separador{
+  position: absolute;
+  width: 80%;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  bottom: -5px;
+}
+
