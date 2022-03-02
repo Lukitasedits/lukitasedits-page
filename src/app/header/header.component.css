@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Mulish&family=Raleway:wght@200&display=swap');
+
 header {
   background-color: white;
   min-height: 65px;
@@ -27,14 +30,38 @@ header {
   transition: transform 0.5s ease;
 }
 
-.items span{
+.item{
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: 0 15px;
+}
+
+.item span{
   font-size: 15px;
-  margin: 15px;
+  font-family: 'Mulish', sans-serif;
   cursor: pointer;
 }
 
+.item .linea{
+  height: 2.5px;
+  border-radius: 2px;
+  background-color: blueviolet;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  width: 0;
+}
+
+.active .linea{
+  width: 105%;
+}
+
 .items span:hover{
-  text-shadow: 0 0px 2px rgba(0, 0, 0, 0.342);
+
 }
 
 #item1{
@@ -87,7 +114,7 @@ header {
 
 @media(max-width: 1010px) {
   .btn_menu{
-    top: 27px;
+    top: 10px;
 
   }
   .items{

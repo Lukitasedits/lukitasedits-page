@@ -15,6 +15,14 @@
 
 .informacion_personal h1{
   color: azure;
+  text-align: center;
+  transition: 0.5s all ease;
+}
+
+@media(max-width:500px){
+  .informacion_personal h1{
+    font-size: 25px;
+  }
 }
 
 .biografia{
@@ -72,6 +80,33 @@
 
 .texto h1{
   margin: 40px;
+  transition: all 0.3s ease;
+}
+
+@media(max-width: 900px){
+
+  .conocimientos .texto{
+    padding: 0;
+  }
+
+  .texto h1{
+    margin: 10px 0;
+    font-size: 30px;
+  }
+}
+
+
+@media(max-width: 500px){
+
+  .conocimientos .texto{
+    padding: 0;
+  }
+
+  .texto h1{
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 .biografia h1{
@@ -81,6 +116,7 @@
 .conocimientos h1{
   width: 80%;
   text-align: start;
+  margin: 30px;
 }
 
 .texto p{

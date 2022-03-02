@@ -15,10 +15,8 @@
       <div class="titulo"><b>{{animaciones[indice].titulo}}</b></div>
       <div class="play" (click)="abrirReproductor()">
         <div class="btn_play"></div>
-        <span style="color:aliceblue;
-                    font-size: 20px;
-                    text-decoration: underline;">
-                          Reproducir animación</span>
+        <span class="repro_vid">
+                          Reproducir video</span>
         </div>
       </div>
     <div [ngStyle]="{'opacity': (indice < animaciones.length-1)?'1':'0', 'cursor': (indice < animaciones.length-1)?'pointer':'default'}" class="btn_mov btn_derecha" *ngIf="mouseOver" (click)="siguienteImagen()"></div>

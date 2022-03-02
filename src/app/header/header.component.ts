@@ -9,6 +9,8 @@ import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 })
 export class HeaderComponent implements OnInit {
 
+  widthLinea: number = 0;
+
   menu_abierto:boolean[] = [false, true, false];
   nombres:string[]= ['Lucas', 'Bruno', 'Juampi'];
 
@@ -17,6 +19,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  crecerLinea(){
+    this.widthLinea = 100;
+  }
 
   alInicio(){
     this.router.navigate(['/inicio']);

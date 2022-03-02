@@ -23,11 +23,8 @@
 .fondo .emprendimiento .texto .titulo{
   height: 30%;
   width: 100%;
-  padding-left: 10%;
-  padding-top: 20%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  margin: 20px;
+  transition: all 0.5s ease;
 }
 
 .fondo .emprendimiento .texto .descripcion{
@@ -106,16 +103,18 @@
     background-repeat: no-repeat;
   }
 
-  .fondo .emprendimiento .texto .titulo{
-    transition: all 0.5s ease;
+  .fondo .emprendimiento .texto{
     justify-content: center;
+    align-items: center;
+  }
+
+  .fondo .emprendimiento .texto .titulo{
+    margin: 50px 35px 0 35px;
+    text-align: center;
   }
 
   .fondo .emprendimiento .texto .descripcion{
     text-align: center;
   }
 
-  .fondo .emprendimiento .galeria .imagenes{
-    width: 80%;
-  }
 }

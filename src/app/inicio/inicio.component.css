@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Mulish&family=Raleway:wght@200&display=swap');
 
 
 .main_box {
@@ -18,11 +19,16 @@
   position: absolute;
   top: calc(50% - 65px);
   color: aliceblue;
+  transition: all 0.5s ease;
   font-size: 65px;
   z-index: +1;
 }
 
-
+@media (max-width:500px){
+  .main_box h1{
+    font-size: 40px;
+  }
+}
 
 .main_box video {
   position: absolute;
@@ -96,6 +102,13 @@
   background-size: cover;
   height: 40px;
   width: 40px;
+}
+
+.repro_vid{
+  color:aliceblue;
+  font-size: 20px;
+  text-decoration: underline;
+  font-family: 'Mulish', sans-serif;
 }
 
 .btn_mov{
@@ -254,6 +267,13 @@
   align-items: center;
   padding-bottom: 5px;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.experience_box .box .descripcion .ver_mas:hover{
+  transform: translateY(-2.5px);
+  box-shadow: 0 2px 4px black;
+  bottom: 2px;
 }
 
 @media(max-width:900px){

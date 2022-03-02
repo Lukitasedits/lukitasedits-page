@@ -1,12 +1,12 @@
 <ng-template #menu let-modal>
   <div class="fondo-negro">
     <div class="btn_cerrar" (click)="modal.close()"><span>x</span></div>
-    <a href="informacion-personal" class="item" id="item1" (click)="modal.close()">Información personal</a>
-    <a href="twitch" class="item" id="item2" (click)="modal.close()">Twitch</a>
-    <a href="emprendimientos" class="item" id="item3" (click)="modal.close()">Emprendimientos</a>
-    <a href="formacion" class="item" id="item4" (click)="modal.close()">Formación y Proyectos</a>
-    <a href="programacion" class="item" id="item5" (click)="modal.close()">Programación</a>
     <a routerLink="inicio" class="item" id="item6" (click)="modal.close()">Inicio</a>
+    <a href="programacion" class="item" id="item5" (click)="modal.close()">Programación</a>
+    <a href="formacion" class="item" id="item4" (click)="modal.close()">Formación y Proyectos</a>
+    <a href="emprendimientos" class="item" id="item3" (click)="modal.close()">Emprendimientos</a>
+    <a href="twitch" class="item" id="item2" (click)="modal.close()">Twitch</a>
+    <a href="informacion-personal" class="item" id="item1" (click)="modal.close()">Información personal</a>
   </div>
 </ng-template>
 
@@ -19,11 +19,29 @@
 <header>
     <img class="logotipo" (click)="alInicio()" src="assets/images/lukitasedits/isologotipo.png">
     <nav class="items">
-      <span routerLink="/inicio" routerLinkActive="Active">Inicio</span>
-      <span routerLink="/programacion" routerLinkActive="Active">Programación</span>
-      <span routerLink="/formacion" routerLinkActive="Active">Formación y Proyectos</span>
-      <span routerLink="/emprendimientos" routerLinkActive="Active">Emprendimientos</span>
-      <span routerLink="/twitch" routerLinkActive="Active">Twitch</span>
-      <span routerLink="/informacion-personal" routerLinkActive="Active">Información personal</span>
+      <div class="item" routerLink="/inicio" routerLinkActive="active">
+         <span>Inicio</span>
+         <div class="linea"></div>
+      </div>
+      <div class="item" routerLink="/programacion" routerLinkActive="active">
+        <span>Programación</span>
+        <div class="linea"></div>
+      </div>
+      <div class="item" routerLink="/formacion" routerLinkActive="active">
+        <span>Formación y Proyectos</span>
+        <div class="linea"></div>
+      </div>
+      <div class="item"  routerLink="/emprendimientos" routerLinkActive="active">
+        <span>Emprendimientos</span>
+        <div class="linea"></div>
+      </div>
+      <div class="item" routerLink="/twitch" routerLinkActive="active">
+        <span>Twitch</span>
+        <div class="linea"></div>
+      </div>
+      <div class="item" routerLink="/informacion-personal" routerLinkActive="active">
+        <span>Información personal</span>
+        <div class="linea"></div>
+      </div>
     </nav>
   </header>

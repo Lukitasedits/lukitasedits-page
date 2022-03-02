@@ -50,26 +50,32 @@
   width: 70%;
   max-height: 100%;
   margin: 0 10px;
+  background-color: black;
 }
 
 .reproductor div{
   margin: 5px;
   height: 100%;
   width: 30%;
-  overflow: hidden;
+  overflow: scroll;
   text-align: center;
 }
 
 @media(max-width: 1200px){
   .reproductor{
+    padding: 0;
     flex-direction: column;
+    height: 400px;
+    width: 90%;
   }
   .reproductor video{
-    max-height: 70%;
+    max-height: 100%;
+    width: 100%;
   }
 
   .reproductor div{
     width: 100%;
+    display: none;
   }
 }
 
@@ -103,11 +109,9 @@ br{
   height: 30px;
   width: 30px;
   background-size: cover;
+  top: calc(50% - 30px);
 }
 
-.barra_miniaturas .boton{
-  top: calc(50% - 30px - 20px + 20px);
-}
 
 .btn_izq{
   background-image: url("~src/assets/images/botones/Btn_left.png");
@@ -118,20 +122,13 @@ br{
   background-image: url(~src/assets/images/botones/Btn_right.png);
 }
 
-.cover .boton{
-  top: 40%;
-}
 
-.cover .btn_izq{
-  left: 5%;
-}
-
-.cover .btn_der{
-  right: 5%;
+.barra_miniaturas .btn_izq{
+  left: 10px;
 }
 
 .barra_miniaturas .btn_der{
-  left: calc(100% - 50px);
+  right: 10px;
 }
 
 .imagenes{

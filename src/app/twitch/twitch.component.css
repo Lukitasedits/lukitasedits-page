@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease;
 }
 
 .twitch_fondo .seccion:nth-child(even){
@@ -28,6 +29,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease;
 }
 
 .seccion .preview video{
@@ -41,12 +43,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5s ease;
 }
 
 @media (max-width: 700px){
+  .seccion{
+    height: 800px;
+  }
   .seccion h1{
-    transition: all 0.5s ease;
     font-size: 50px;
+  }
+}
+
+@media (max-width: 500px){
+  .seccion{
+    height: 700px;
+  }
+  .seccion .preview{
+    height: 250px;
+  }
+  .seccion h1{
+    font-size: 35px;
   }
 }
 

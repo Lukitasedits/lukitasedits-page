@@ -25,12 +25,19 @@
   width: 80%;
   font-size: 40px;
   margin-bottom: 10px;
+  transition: all 0.5s ease;
 }
 
 .main_box p{
   color: white;
   text-align: center;
   max-width: 800px;
+}
+
+@media (max-width: 500px){
+  .main_box h1{
+    font-size: 27px;
+  }
 }
 
 .formacion{
@@ -101,4 +108,23 @@
 .formacion .titulo_box .separador_blanco{
   width: 50%;
   border-top: 1px white solid;
+}
+
+@media (max-width:500px){
+  .informacion{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .informacion h3{
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+
+  .informacion p{
+    width: 90%;
+    text-align:  justify;
+    padding: 0;
+  }
 }

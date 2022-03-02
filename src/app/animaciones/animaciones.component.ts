@@ -39,7 +39,7 @@ export class AnimacionesComponent implements OnInit {
   }
 
   moverCarruselIzq(){
-    if(this.carruselPos <= 0){
+    if(this.carruselPos < 0){
       this.carruselPos+= this.widthCImagen;
     }
   }
