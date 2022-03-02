@@ -169,7 +169,7 @@
 
 @media(max-width: 600px){
   .logro .texto{
-    padding: 15px;
+    padding: 30px;
   }
 }
 
@@ -201,7 +201,18 @@
   width: 80%;
   max-width: 400px;
   height: 400px;
-  overflow: hidden;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+.carrusel .vista::-webkit-scrollbar{
+  height: 10px;
+  background-color: black;
+}
+
+.carrusel .vista::-webkit-scrollbar-thumb{
+  background-color: aquamarine;
+  border-radius: 10px;
 }
 
 .vista .banda{
@@ -211,7 +222,6 @@
   background-color: #e9a8db;
   display: flex;
   transition: all 0.5s ease;
-  overflow: hidden;
 }
 
 .imagen_carrusel{

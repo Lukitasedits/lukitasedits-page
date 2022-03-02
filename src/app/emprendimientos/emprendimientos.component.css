@@ -11,6 +11,7 @@
   width: 65%;
   margin: 30px;
   display: flex;
+  padding: 15px;
 }
 
 .fondo .emprendimiento .texto{
@@ -22,7 +23,7 @@
 
 .fondo .emprendimiento .texto .titulo{
   height: 30%;
-  width: 100%;
+  width: 80%;
   margin: 20px;
   transition: all 0.5s ease;
 }
@@ -34,7 +35,6 @@
 }
 
 .fondo .emprendimiento .galeria{
-  margin: 20px 0;
   width: 60%;
   height: 100%;
   display: flex;
@@ -61,7 +61,18 @@
   height: 475px;
   background-color: black;
   background-position: center center;
-  overflow: hidden;
+  overflow: scroll;
+  overflow-y: hidden;
+}
+
+.fondo .emprendimiento .galeria .imagenes::-webkit-scrollbar{
+  height: 10px;
+  background-color: white;
+}
+
+.fondo .emprendimiento .galeria .imagenes::-webkit-scrollbar-thumb{
+  background-color: rgb(231, 168, 233);
+  border-radius: 4px;
 }
 
 .fondo .emprendimiento .galeria .imagenes .banda{
@@ -84,7 +95,7 @@
   width: 475px;
 }
 
-@media(max-width:1000px){
+@media(max-width:1250px){
   .fondo .emprendimiento{
     flex-direction: column;
     width: 90%;
@@ -115,6 +126,17 @@
 
   .fondo .emprendimiento .texto .descripcion{
     text-align: center;
+  }
+
+  @media (max-width: 550px) {
+
+    .banda{
+      overflow: hidden;
+    }
+
+    .galeria .boton{
+      display: none;
+    }
   }
 
 }

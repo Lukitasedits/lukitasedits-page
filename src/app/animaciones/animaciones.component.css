@@ -98,6 +98,8 @@ br{
 .barra_miniaturas{
   height: 150px;
   width: 100%;
+  overflow: scroll;
+  overflow-y: hidden;
   position: relative;
   display: flex;
 }
@@ -161,3 +163,14 @@ br{
     color: azure;
     text-decoration: underline;
   }
+
+  .barra_miniaturas::-webkit-scrollbar{
+    height: 10px;
+    background-color: black;
+  }
+
+  .barra_miniaturas::-webkit-scrollbar-thumb{
+    background-color: blueviolet;
+    border-radius: 10px;
+  }
+

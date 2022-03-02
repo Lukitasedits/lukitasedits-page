@@ -12,14 +12,11 @@ import { Animacion } from '../identities/animacion';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent implements OnInit {
-
-  mouseOver: boolean;
   animaciones: Animacion[];
   indice: number = 0;
   leftText: number = 450;
 
   constructor(public modal:NgbModal, private modalService: ModalService, private animacionesService: AnimacionesService, public router: Router) {
-    this.mouseOver = false;
   }
 
   ngOnInit(): void {

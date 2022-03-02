@@ -114,6 +114,7 @@
 .btn_mov{
   margin: 10px;
   background-size: cover;
+  background-position: center center;
   height: 40px;
   width: 40px;
   cursor: pointer;
@@ -127,6 +128,7 @@
 .btn_derecha{
   background-image: url('~src/assets/images/botones/Btn_right.png');
 }
+
 
 .item_central{
   width: 400px;
