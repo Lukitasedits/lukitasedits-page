@@ -138,7 +138,7 @@
     "preview": "assets/twitchs/MaiiArraiz_preview.mp4",
     "descripcion": "Canal de IRL Y Gameplays",
     "resumen": "Cree una escena animada para el comienzo de su stream, una escena estática para cuando esté 'Offline', un pequeño spot publicitario, y animé el marco de webcam.",
-    "rutaMedia": "~src/assets/twitchs/maiiarraiz/",
+    "rutaMedia": "assets/twitchs/maiiarraiz/",
     "media": [
       {
         "idmedia": 0,
