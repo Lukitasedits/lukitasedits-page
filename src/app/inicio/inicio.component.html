@@ -1,7 +1,13 @@
 <div class="main_box">
   <h1>LUKITASEDITS</h1>
-  <video [ngStyle]="{'width': widthPantalla}" src="assets/videos/lukitasedits/Banner_animado.mp4" autoplay muted loop>
+  <video [ngStyle]="{'width': widthPantalla}" muted loop autoplay onloadedmetadata="this.muted = true" oncanplay="this.play()" id="video-autoplay">
+    <source src="assets/videos/lukitasedits/Banner_animado.mp4" type="video/mp4">
   </video>
+  <!--script>
+    window.onload = function(){
+      document.getElementById("video-autoplay").play();
+    }
+  </script-->
 </div>
 <div class="mensaje_box">
   <span [ngStyle]="{'left': leftText + 'px'}"><b>"Mi meta es poder plasmar cualquier idea en una pantalla por mas <br/> compleja que sea, incluso darles una interactividad"</b></span>
