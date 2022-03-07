@@ -32,8 +32,7 @@
 
 .main_box video {
   position: absolute;
-  width: 1580px;
-  height: 870px;
+  height: auto;
 }
 
 .main_box h1:focus{

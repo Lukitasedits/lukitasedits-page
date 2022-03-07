@@ -15,6 +15,7 @@ export class InicioComponent implements OnInit {
   animaciones: Animacion[];
   indice: number = 0;
   leftText: number = 450;
+  widthPantalla: number = document.documentElement.clientWidth;
 
   constructor(public modal:NgbModal, private modalService: ModalService, private animacionesService: AnimacionesService, public router: Router) {
   }
