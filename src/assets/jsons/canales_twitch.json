@@ -165,5 +165,32 @@
         "titulo": "Escena Ya Comenzamos"
       }
       ]
+  },
+  {
+    "nombre": "Main Story",
+    "preview": "assets/twitchs/mainstory/Clip_youtube_Boffe1.mp4",
+    "descripcion": "Podcast Gaming",
+    "resumen": "Trabajo en conjunto con la agencia Iberogram para desarrollar contenido para redes sociales a partir de las grabaciones del podcast. Además de la realización del outro animado.",
+    "rutaMedia": "assets/twitchs/mainstory/",
+    "media": [
+      {
+        "idmedia": 0,
+        "nombre": "Outro_MainStory",
+        "extension": "mp4",
+        "titulo": "Outro Animado"
+      },
+      {
+        "idmedia": 1,
+        "nombre": "Intro_Ejemplo",
+        "extension": "mp4",
+        "titulo": "Intro Animada"
+      },
+      {
+        "idmedia": 2,
+        "nombre": "Miniatura_clip_youtube1",
+        "extension": "jpg",
+        "titulo": "Miniatura Para Video de Youtube"
+      }
+      ]
   }
 ]
