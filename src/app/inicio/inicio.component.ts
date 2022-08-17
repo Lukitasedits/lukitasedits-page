@@ -1,9 +1,12 @@
+import { ProgramacionService } from './../service/programacion.service';
+import { ProgramacionComponent } from './../programacion/programacion.component';
 import { Router } from '@angular/router';
 import { AnimacionesService } from './../service/animaciones.service';
 import { ModalService } from './../service/modal.service';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Inject, Input, OnInit } from '@angular/core';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import { Animacion } from '../identities/animacion';
+import { DOCUMENT } from '@angular/common';
 
 
 @Component({
@@ -15,9 +18,9 @@ export class InicioComponent implements OnInit {
   animaciones: Animacion[];
   indice: number = 0;
   leftText: number = 450;
-  widthPantalla: number = document.documentElement.clientWidth;
+  widthPantalla: number = this.document.documentElement.clientWidth;
 
-  constructor(public modal:NgbModal, private modalService: ModalService, private animacionesService: AnimacionesService, public router: Router) {
+  constructor(@Inject(DOCUMENT) private document: Document,public modal:NgbModal, private modalService: ModalService, private animacionesService: AnimacionesService, public router: Router, private programacionService: ProgramacionService ) {
   }
 
   ngOnInit(): void {
@@ -48,10 +51,38 @@ export class InicioComponent implements OnInit {
 
   routeToEmprendimientos(){
     this.router.navigate(['/emprendimientos'])
+    this.document.documentElement.scrollTop = 0;
   }
 
   routeToTwitch(){
     this.router.navigate(['/twitch'])
+    this.document.documentElement.scrollTop = 0;
   }
 
+  goToJava(){
+    this.router.navigate(['/programacion'])
+    setTimeout(()=>{
+      this.programacionService.getLenguajeElement(0).subscribe(e =>{
+        e.nativeElement.scrollIntoView({behavior: 'smooth'});
+      });
+    });
+  }
+
+  goToWeb(){
+    this.router.navigate(['/programacion'])
+    setTimeout(()=>{
+      this.programacionService.getLenguajeElement(1).subscribe(e =>{
+        e.nativeElement.scrollIntoView({behavior: 'smooth'});
+      });
+    });
+  }
+
+  goToDelphi(){
+    this.router.navigate(['/programacion'])
+    setTimeout(()=>{
+        this.programacionService.getLenguajeElement(2).subscribe(e =>{
+          e.nativeElement.scrollIntoView({behavior: 'smooth'});
+      })
+    });
+  }
 }

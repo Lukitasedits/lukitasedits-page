@@ -31,17 +31,17 @@
 <div class="programacion_box">
   <span class="programacion_titulo"><b>PROGRAMACIÓN</b></span>
   <div class="lenguajes">
-    <div class="lenguaje delphi">
-      <div class="imagen_lenguaje delphi_ico" routerLink="/programacion"></div>
-      <b class= "nombre_lenguaje">DELPHI</b>
-    </div>
     <div class="lenguaje java">
-      <div class="imagen_lenguaje java_ico" routerLink="/programacion"></div>
+      <div class="imagen_lenguaje java_ico" (click)="goToJava()"></div>
       <b class="nombre_lenguaje">JAVA</b>
     </div>
     <div class="lenguaje web">
-      <div class="imagen_lenguaje web_ico" routerLink="/programacion"></div>
+      <div class="imagen_lenguaje web_ico" (click)="goToWeb()"></div>
       <b class="nombre_lenguaje">WEB</b>
+    </div>
+    <div class="lenguaje delphi">
+      <div class="imagen_lenguaje delphi_ico" (click)="goToDelphi()"></div>
+      <b class= "nombre_lenguaje">DELPHI</b>
     </div>
   </div>
 </div>

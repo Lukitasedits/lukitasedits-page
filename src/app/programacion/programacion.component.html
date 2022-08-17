@@ -6,7 +6,7 @@
   </div>
 </div>
 <div class="fondo_lenguajes">
-  <div class="lenguaje" *ngFor="let lenguaje of lenguajesProgramacion; let i = index">
+  <div class="lenguaje" *ngFor="let lenguaje of lenguajesProgramacion; let i = index" #Lenguajes>
     <div class="lenguaje_presentacion">
       <div class="lenguaje_ico" [ngStyle]="{'background-image': 'url(' + lenguaje.imagen + ')'}"></div>
       <h1>{{lenguaje.nombre}}</h1>
@@ -18,6 +18,22 @@
         <p>{{tecnologia.descripcion}}</p>
       </div>
       <div class="separador" *ngIf="i != lenguajesProgramacion.length-1"></div>
+    </div>
+    <div *ngIf="i == 1" alt="Página web Megadat">
+      <div class="magadat-box">
+        <div class="imagen-sector">
+          <div class="imagen-megadat" #imagenMegadat></div>
+        </div>
+        <div class="descripcion-sector">
+          <b> Página Web Megadat</b>
+          <p> Desarrollé la página web de una empresa de tecnología y reparación de pc.
+            <br>
+            En ella integré toda la información de la misma unido a una interfáz gráfica moderna e interacción con el usuario que logra una gran impresión al cliente.
+          </p>
+          <a class="boton-megadat" target="_blank" href="http://www.megadat.com.ar/inicio">IR A VERLA!</a>
+          <a class="github-ICO" href="https://github.com/Lukitasedits/megadat-page" target="_blank"></a>
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@700&family=League+Spartan:wght@300&family=Mingzat&family=Mukta&family=Mulish&family=Raleway:wght@200;400&display=swap');
 .programacion_box{
   width: 100%;
   height: 500px;
@@ -69,10 +70,13 @@
 }
 
 .lenguaje .lenguaje_presentacion .lenguaje_ico{
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
   background-size: cover;
   background-position: center center;
+  border-radius: 50%;
+  box-shadow: 0 0px 10px #000;
+  margin-bottom: 10px;
 }
 
 .lenguaje .lenguaje_presentacion h1{
@@ -117,3 +121,122 @@
   bottom: -5px;
 }
 
+.magadat-box{
+  width: 90vw;
+  height: 450px;
+  background-color: #000;
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  box-shadow: 0 0 10px #000;
+}
+
+.imagen-sector{
+  width: 50%;
+  height: 100%;
+  background-color: rgb(30, 30, 30);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-megadat{
+  box-shadow: 0 0 5px #000;
+  width: 90%;
+  height: 400px;
+  background-size: cover;
+  background-image: url(~src/assets/images/screenshots/screenshot-megadat.jpg);
+}
+
+.descripcion-sector{
+  background-color: rgb(12, 12, 12);
+  color: snow;
+  font-family: 'Raleway';
+  padding: 30px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+
+.descripcion-sector b{
+  font-size: 40px;
+}
+
+.descripcion-sector p{
+
+}
+
+.descripcion-sector .boton-megadat{
+  justify-self:flex-end;
+  align-self: center;
+}
+
+.descripcion-sector .boton-megadat{
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: rgb(43, 43, 43);
+  color: snow;
+  font-family: 'Josefin Sans';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0px 5px #000;
+  font-size: 18px;
+  text-align: center;
+  text-justify: center;
+  margin: 20px;
+  transition: 0.3s all;
+  border: solid 2px black;
+  padding-top: 5px;
+  text-decoration: none;
+}
+
+.descripcion-sector .boton-megadat span{
+  text-shadow: 0 0 2px #000;
+}
+
+.descripcion-sector .boton-megadat:hover{
+  background-color: rgba(89, 88, 88, 0.647);
+}
+
+.descripcion-sector .github-ICO{
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  border-radius: 50%;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  margin: 5px;
+  background-image: url(~src/assets/images/redes_sociales/github.png);
+  box-shadow: 0 5px 5px #000;
+}
+
+
+@media (max-width: 900px) {
+  .magadat-box{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .imagen-sector{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .imagen-megadat{
+    height: 200px;
+    width: 400px;
+  }
+
+  .descripcion-sector{
+    width: 100%;
+  }
+
+}

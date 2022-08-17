@@ -171,11 +171,18 @@
 }
 
 .programacion_box .lenguajes .lenguaje .imagen_lenguaje{
-  width: 250px;
-  height: 250px;
-  border-radius: 1000px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
   background-size: cover;
   cursor: pointer;
+  transition: 0.2s all;
+  box-shadow: 0 2px 10px #000;
+}
+
+.programacion_box .lenguajes .lenguaje .imagen_lenguaje:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 10px 10px #000;
 }
 
 .programacion_box .lenguajes .lenguaje .nombre_lenguaje{
@@ -192,7 +199,7 @@
 }
 
 .web_ico{
-  background-image: url(~src/assets/images/iconos_lenguajes/Web_ICO.png);
+  background-image: url('~src/assets/images/iconos_lenguajes/Web_ICO.png');
 }
 
 .experience_box{

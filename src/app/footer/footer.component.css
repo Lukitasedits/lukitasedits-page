@@ -5,7 +5,7 @@
   bottom: 0;
   background-color: aliceblue;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   box-shadow: -1px 0 10px black;
 }
@@ -15,9 +15,18 @@
   align-items: center;
 }
 
+.iconos{
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
 .icono{
-  width: 30px;
-  height: 30px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   background-size: cover;
   margin: 10px;
 }
@@ -30,14 +39,37 @@
   background-image: url('~src/assets/images/redes_sociales/Instagram.png');
 }
 
+.gh_ico{
+  background-image: url('~src/assets/images/redes_sociales/github-footer.png');
+}
+
 .red a{
   color: black;
   text-decoration: none;
 
 }
 
+.copy{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.relleno{
+  width: 200px;
+}
+
 @media(max-width:600px){
   .copy{
+    display: none;
+  }
+
+  .footer{
+    align-items: center;
+    justify-content: center;
+  }
+
+  .relleno{
     display: none;
   }
 }
