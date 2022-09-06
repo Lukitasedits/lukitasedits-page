@@ -79,6 +79,10 @@
   }
 }
 
+.descripcion-box::-webkit-scrollbar {
+  display: none;
+}
+
 #titulo{
 
   font-size: 25px;

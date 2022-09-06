@@ -16,6 +16,7 @@ import { ReproductorTwitchComponent } from './reproductor-twitch/reproductor-twi
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormacionYProyectosComponent } from './formacion-yproyectos/formacion-yproyectos.component';
 import { InformacionPersonalComponent } from './informacion-personal/informacion-personal.component';
+import { CuevaComponent } from './cueva/cueva.component';
 
 const routes : Routes = [
   {path:'', redirectTo:'/inicio', pathMatch:'full'},
@@ -39,7 +40,8 @@ const routes : Routes = [
     TwitchComponent,
     ReproductorTwitchComponent,
     FormacionYProyectosComponent,
-    InformacionPersonalComponent
+    InformacionPersonalComponent,
+    CuevaComponent
   ],
   imports: [
     BrowserModule,

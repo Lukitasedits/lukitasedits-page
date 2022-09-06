@@ -7,7 +7,7 @@
       <div class="boton_reproductor btn_izq" [ngStyle]="{'opacity': (indice > 0)?'1':'0', 'cursor': (indice > 0)?'pointer':'default'}" (click)="anteriorAnimacion()"></div>
       <div class="reproductor">
         <video autoplay [muted]="true" controls [src]="'assets/videos/animaciones/' + animaciones[indice].nombre + '.mp4'"> </video>
-        <div>
+        <div class="descripcion-box">
             <br/>
             <span id="titulo">{{animaciones[indice].titulo}}</span>
             <br/>
