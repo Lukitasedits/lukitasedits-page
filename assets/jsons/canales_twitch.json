@@ -50,6 +50,27 @@
     ]
   },
   {
+    "nombre": "Argentina Night Show",
+    "preview": "assets/twitchs/ANS_preview.mp4",
+    "descripcion": "Canal de entretenimiento entrevistando a Streamers.",
+    "resumen": "He editado videos y realizado un par de proyectos de animación para su publicidad en las redes y su fachada como programa.",
+    "rutaMedia": "assets/twitchs/ans/",
+    "media": [
+      {
+        "idmedia": 0,
+        "nombre": "clip-ed-video",
+        "extension": "mp4",
+        "titulo": "Fragmento de video editado"
+      },
+      {
+        "idmedia": 1,
+        "nombre": "instagram",
+        "extension": "mp4",
+        "titulo": "Panel instagram de invitados"
+      }
+    ]
+  },
+  {
     "nombre": "Franzanettini",
     "preview": "assets/twitchs/Franza_preview.mp4",
     "descripcion": "Canal de IRL",
