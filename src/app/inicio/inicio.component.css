@@ -29,9 +29,13 @@
     font-size: 40px;
   }
 }
+
 app-cueva{
   position: absolute;
+  right: 0px;
+  left: 0px;
   bottom: 0px;
+  margin: auto;
 }
 
 .main_box video {

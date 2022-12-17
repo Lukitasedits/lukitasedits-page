@@ -7,6 +7,7 @@
     <div class="galeria">
       <!--div class="boton btn_izq" [ngStyle]="{'opacity': opacidadIzq[i], 'cursor': cursorIzq[i]}" (click)="atras(i)" ></div-->
       <div class="imagenes">
+        <div class="deslizar"> Deslizar >> </div>
         <div [ngStyle]="{'width': 'calc(475px * ' + emp.trabajos.length + ')'}" class="banda">
           <div width="475px" height="100%" *ngFor="let trabajo of emp.trabajos" class="repetidor">
             <video *ngIf="trabajo.extension == 'mp4' else elseBlock" width="475px" autoplay loop [muted]="true" [src]="emp.ruta + trabajo.nombre + '.' + trabajo.extension"></video>

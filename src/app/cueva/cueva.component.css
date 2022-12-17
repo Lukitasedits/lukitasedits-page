@@ -7,6 +7,8 @@
   perspective: 10000px;
   perspective-origin: center;
   transition: all 0.1s;
+
+  background-color: aliceblue;
 }
 
 .cueva div{
@@ -30,41 +32,49 @@
   align-items: center;
   justify-content: center;
   transform: translateZ(100px);
+  background-position: center center;
   background-image: url('~src/assets/images/Capas Cueva/Fondo.png');
 }
 
 .luz{
+  background-position: center center;
   background-image: url('~src/assets/images/Capas Cueva/Luz cueva.png');
   transition: 0.2s all;
 }
 
 .iluminacion{
   mix-blend-mode: overlay;
+  background-position: center center;
   background-image: url('~src/assets/images/Capas Cueva/Iluminación Artificial.png');
 }
 
 .hojas_izquierda{
   transform: translateZ(300px);
+  background-position: center center;
   background-image: url('~src/assets/images/Capas Cueva/Hojas Izquierda.png');
 }
 
 
 .hojas_derecha{
+  background-position: center center;
   background-image: url('~src/assets/images/Capas Cueva/Hojas Derecha.png');
 }
 
 .hojas_derecha{
   transform: translateZ(150px);
+  background-position: center center;
   background-image: url('~src/assets/images/Capas Cueva/Hojas Derecha.png');
 }
 
 .cueva .roca{
   transform: translateZ(500px);
+  background-position: center center;
   background-image: url('~src/assets/images/Capas Cueva/Roca Frontal.png');
 }
 
 .iluminacion_roca{
   mix-blend-mode: hard-light;
+  background-position: center center;
   background-image: url('~src/assets/images/Capas Cueva/Iluminación Roca.png');
 }
 
@@ -73,6 +83,7 @@
   width: 400px;
   height: 250px;
   align-self: center;
+  background-position: center center;
   background-image: url('~src/assets/images/Capas Cueva/Logo lukitasedits led on.png');
   animation-name: brillo;
   animation-duration: 2s;
