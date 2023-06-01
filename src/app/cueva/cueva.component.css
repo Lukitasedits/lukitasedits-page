@@ -8,7 +8,7 @@
   perspective-origin: center;
   transition: all 0.1s;
 
-  background-color: aliceblue;
+  background-color: rgb(0, 0, 0);
 }
 
 .cueva div{

@@ -1,37 +1,155 @@
 <div class="programacion_box">
   <h1>Programación</h1>
-  <p class="descripcion">La programación para mí es la clave para que la humanidad dé el siguiente paso. Gracias a ella podemos interactuar con sistemas artificiales que son capaces de hacer cosas realmente increíbles.</p>
+  <p class="descripcion">
+    La programación para mí es la clave para que la humanidad dé el siguiente
+    paso. Gracias a ella podemos interactuar con sistemas artificiales que son
+    capaces de hacer cosas realmente increíbles.
+  </p>
   <div class="animation">
-    <video autoplay [muted]="true" loop src="assets/videos/extras/Animacion_programacion.mp4"></video>
+    <video
+      autoplay
+      [muted]="true"
+      loop
+      src="assets/videos/extras/Animacion_programacion.mp4"
+    ></video>
   </div>
 </div>
 <div class="fondo_lenguajes">
-  <div class="lenguaje" *ngFor="let lenguaje of lenguajesProgramacion; let i = index" #Lenguajes>
+  <div
+    class="lenguaje"
+    *ngFor="let lenguaje of lenguajesProgramacion; let i = index"
+    #Lenguajes
+  >
     <div class="lenguaje_presentacion">
-      <div class="lenguaje_ico" [ngStyle]="{'background-image': 'url(' + lenguaje.imagen + ')'}"></div>
-      <h1>{{lenguaje.nombre}}</h1>
+      <div
+        class="lenguaje_ico"
+        [ngStyle]="{ 'background-image': 'url(' + lenguaje.imagen + ')' }"
+      ></div>
+      <h1>{{ lenguaje.nombre }}</h1>
     </div>
     <div class="informacion">
       <div class="tecnologia" *ngFor="let tecnologia of lenguaje.tecnologia">
-        <h1>{{tecnologia.nombre}}</h1>
-        <hr>
-        <p>{{tecnologia.descripcion}}</p>
+        <h1>{{ tecnologia.nombre }}</h1>
+        <hr />
+        <p>{{ tecnologia.descripcion }}</p>
       </div>
-      <div class="separador" *ngIf="i != lenguajesProgramacion.length-1"></div>
+      <div
+        class="separador"
+        *ngIf="i != lenguajesProgramacion.length - 1"
+      ></div>
     </div>
+
+    <div *ngIf="i == 0">
+      <div class="app-box" id="mundial-app">
+        <div class="video-sector">
+          <video
+          muted
+          controls
+          onloadedmetadata="this.muted = true"
+          oncanplay="this.play()"
+          id="video-autoplay"
+          >
+          <source
+          src="assets/videos/extras/mundial-preview.mp4"
+          type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="descripcion-video-sector">
+        <h1><b>App Album mundial - Fullstack</b></h1>
+        <div class="separador-mundial"></div>
+        <p>
+          Programé una aplicación con Angular y Spring Boot (java) que ayuda a los usuarios a registrar la información sobre las figuritas del album del Mundial 2022 para que sigan el rastro de cuánto les falta y cuáles tiene repetidas.
+          <br/>
+          Con una interfaz dinámica y con un sistema de registro y logueado de usuarios, pude practicar sobre el uso de tecnologías como <strong>Spring boot security</strong> y <strong>JWT</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div *ngIf="i == 1" alt="Página web Megadat">
-      <div class="magadat-box">
+      <div class="web-box" id="megadat">
         <div class="imagen-sector">
-          <div class="imagen-megadat" #imagenMegadat></div>
+          <div class="imagen-web" #imagenMegadat></div>
         </div>
         <div class="descripcion-sector">
           <b> Página Web Megadat</b>
-          <p> Desarrollé la página web de una empresa de tecnología y reparación de pc.
-            <br>
-            En ella integré toda la información de la misma unido a una interfáz gráfica moderna e interacción con el usuario que logra una gran impresión al cliente.
+          <p>
+            Desarrollé la página web de una empresa de tecnología y reparación
+            de pc.
+            <br />
+            En ella integré toda la información de la misma unido a una interfáz
+            gráfica moderna e interacción con el usuario que logra una gran
+            impresión al cliente.
           </p>
-          <a class="boton-megadat" target="_blank" href="http://www.megadat.com.ar/inicio">IR A VERLA!</a>
-          <a class="github-ICO" href="https://github.com/Lukitasedits/megadat-page" target="_blank"></a>
+          <a
+            class="boton-web"
+            target="_blank"
+            href="http://www.megadat.com.ar/inicio"
+            >IR A VERLA!</a
+          >
+          <a
+            class="github-ICO"
+            href="https://github.com/Lukitasedits/megadat-page"
+            target="_blank"
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="i == 1" alt="Página web Brittania-institute">
+      <div class="web-box" id="brittania">
+        <div class="imagen-sector">
+          <div class="imagen-web" #imagenMegadat></div>
+        </div>
+        <div class="descripcion-sector">
+          <b> Página Web Brittania Institute</b>
+          <p>
+            Desarrollé la página web del instituto de inglés con un enfoque
+            descriptivo y dinámico.
+            <br />
+            En ella integré todas las necesidades del cliente tomándome la
+            libertad creativa de realizar animaciones para unir mis dos fuertes
+            y lograr que la aplicación sea más atractiva y llamativa.
+          </p>
+          <a
+            class="boton-web"
+            target="_blank"
+            href="https://lukitasedits.github.io/brittania-institute/"
+            >IR A VERLA!</a
+          >
+          <a
+            class="github-ICO"
+            href="https://github.com/Lukitasedits/brittania-institute"
+            target="_blank"
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="i == 2">
+      <div class="app-box" id="buscaminas-app">
+        <div class="video-sector">
+          <video
+          muted
+          controls
+          onloadedmetadata="this.muted = true"
+          oncanplay="this.play()"
+          id="video-autoplay"
+          >
+          <source
+          src="assets/videos/extras/buscaminas-preview.mp4"
+          type="video/mp4"
+          />
+        </video>
+      </div>
+      <div class="descripcion-video-sector">
+        <h1><b>Buscaminas</b></h1>
+        <p>
+          Programé una aplicación con Angular y Spring Boot (java) que ayuda a los usuarios a registrar la información sobre las figuritas del album del Mundial 2022 para que sigan el rastro de cuánto les falta y cuáles tiene repetidas.
+          <br/>
+          Con una interfaz dinámica y con un sistema de registro y logueado de usuarios, pude practicar sobre el uso de tecnologías como <strong>Spring boot security</strong> y <strong>JWT</strong>.
+          </p>
         </div>
       </div>
     </div>

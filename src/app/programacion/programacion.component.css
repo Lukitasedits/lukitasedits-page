@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@700&family=League+Spartan:wght@300&family=Mingzat&family=Mukta&family=Mulish&family=Raleway:wght@200;400&display=swap');
-.programacion_box{
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@700&family=League+Spartan:wght@300&family=Mingzat&family=Mukta&family=Mulish&family=Raleway:wght@200;400&display=swap");
+.programacion_box {
   width: 100%;
   height: 500px;
   background-color: black;
@@ -10,12 +10,12 @@
   position: relative;
 }
 
-.programacion_box h1{
+.programacion_box h1 {
   color: white;
   z-index: 1;
 }
 
-.programacion_box p{
+.programacion_box p {
   color: white;
   margin: 30px;
   max-width: 800px;
@@ -23,7 +23,7 @@
   z-index: 1;
 }
 
-.animation{
+.animation {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -33,12 +33,12 @@
   align-items: center;
 }
 
-.animation video{
+.animation video {
   height: 100%;
   width: auto;
 }
 
-.fondo_lenguajes{
+.fondo_lenguajes {
   background-color: rgb(255, 255, 255);
   width: 100%;
   height: auto;
@@ -48,7 +48,7 @@
   align-items: center;
 }
 
-.lenguaje{
+.lenguaje {
   width: 100%;
   height: auto;
   margin: 20px 0;
@@ -60,7 +60,7 @@
   position: relative;
 }
 
-.lenguaje .lenguaje_presentacion{
+.lenguaje .lenguaje_presentacion {
   width: 300px;
   height: 300px;
   display: flex;
@@ -69,7 +69,7 @@
   align-items: center;
 }
 
-.lenguaje .lenguaje_presentacion .lenguaje_ico{
+.lenguaje .lenguaje_presentacion .lenguaje_ico {
   width: 170px;
   height: 170px;
   background-size: cover;
@@ -79,11 +79,11 @@
   margin-bottom: 10px;
 }
 
-.lenguaje .lenguaje_presentacion h1{
+.lenguaje .lenguaje_presentacion h1 {
   text-shadow: 0 0 3px black;
 }
 
-.informacion{
+.informacion {
   width: 80%;
   height: auto;
   display: flex;
@@ -92,66 +92,200 @@
   align-content: flex-start;
 }
 
-.informacion .tecnologia{
-    width: 250px;
-    height: auto;
-    margin: 20px 70px;
+.informacion .tecnologia {
+  width: 250px;
+  height: auto;
+  margin: 20px 70px;
 }
 
-.informacion .tecnologia h1{
+.informacion .tecnologia h1 {
   width: 100%;
   text-align: center;
 }
 
 @media (max-width: 400px) {
-  .informacion .tecnologia{
+  .informacion .tecnologia {
     margin: 20px 15px;
   }
 }
 
-.informacion .tecnologia p{
+.informacion .tecnologia p {
   width: 100%;
   text-align: center;
 }
 
-.lenguaje .separador{
+.lenguaje .separador {
   position: absolute;
   width: 80%;
   border-bottom: 1px solid rgb(0, 0, 0);
   bottom: -5px;
 }
 
-.magadat-box{
+
+
+
+
+.app-box{
+  width: 95%;
+  height: 500px;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: #5b0424;
+  color: snow;
+  margin: auto;
+  box-shadow: 0 0 5px #000;
+}
+
+#buscaminas-app{
+  flex-direction: row;
+}
+
+.app-box .video-sector{
+  width: 50%;
+  height: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #8c0637;
+}
+
+#buscaminas-app .video-sector{
+  background-color: #d87b7d;
+}
+
+.app-box .video-sector video{
+  width: 90%;
+  box-shadow: 0 0 5px #000;
+}
+
+.app-box .descripcion-video-sector{
+  width: 50%;
+  height: 100%;
+  font-family: 'Raleway';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#buscaminas-app .descripcion-video-sector{
+  background-color: #583334;
+}
+
+.app-box .descripcion-video-sector h1{
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+
+#buscaminas-app .descripcion-video-sector h1{
+  padding-left: 30px;
+  text-align: start;
+}
+
+.app-box .descripcion-video-sector p{
+  padding: 30px;
+  font-size: 19px;
+  justify-content: center;
+}
+
+.app-box .descripcion-video-sector .separador-mundial{
+  width: 100%;
+  height: 60px;
+  /* margin-bottom: 30px; */
+  background-size: contain;
+  background-position: center center;
+  background-repeat:  no-repeat;
+  background-blend-mode:soft-light;
+  background-image: url(~src/assets/images/extras/Separador.png);
+}
+
+@media (max-width: 1050px){
+  .app-box{
+    flex-direction: column;
+    height: auto;
+    align-self: center;
+  }
+
+  .app-box .video-sector{
+    width: 100%;
+    padding: 20px;
+  }
+
+  .app-box .descripcion-video-sector{
+    width: 100%;
+  }
+}
+
+@media (max-width: 530px) {
+  .app-box{
+    margin-top: 30px;
+    width: 100vw;
+  }
+  .app-box .video-sector{
+    padding: 0px;
+  }
+
+  .app-box .video-sector video{
+    width: 100%;
+  }
+}
+
+
+
+
+.web-box {
   width: 90vw;
   height: 450px;
-  background-color: #000;
   display: flex;
   flex-direction: row;
   margin: 30px;
   box-shadow: 0 0 10px #000;
 }
 
-.imagen-sector{
+#megadat {
+}
+
+#brittania {
+  flex-direction: row-reverse;
+}
+
+.imagen-sector {
   width: 50%;
   height: 100%;
-  background-color: rgb(30, 30, 30);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.imagen-megadat{
+#megadat .imagen-sector {
+  background-color: rgb(30, 30, 30);
+}
+
+#brittania .imagen-sector {
+  background-color: #d7447c;
+}
+
+.imagen-web {
   box-shadow: 0 0 5px #000;
   width: 90%;
   height: 400px;
   background-size: cover;
+}
+
+#megadat .imagen-web {
   background-image: url(~src/assets/images/screenshots/screenshot-megadat.jpg);
 }
 
-.descripcion-sector{
+#brittania .imagen-web {
+  background-image: url(~src/assets/images/screenshots/screenshot-brittania.jpg);
+}
+
+.descripcion-sector {
   background-color: rgb(12, 12, 12);
   color: snow;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   padding: 30px;
   width: 50%;
   display: flex;
@@ -160,27 +294,33 @@
   position: relative;
 }
 
-.descripcion-sector b{
+#megadat .descripcion-sector {
+  background-color: rgb(12, 12, 12);
+}
+
+#brittania .descripcion-sector {
+  background-color: rgb(53, 6, 39);
+}
+
+.descripcion-sector b {
   font-size: 40px;
 }
 
-.descripcion-sector p{
-
+.descripcion-sector p {
 }
 
-.descripcion-sector .boton-megadat{
-  justify-self:flex-end;
+.descripcion-sector .boton-web {
+  justify-self: flex-end;
   align-self: center;
 }
 
-.descripcion-sector .boton-megadat{
+.descripcion-sector .boton-web {
   cursor: pointer;
   width: 200px;
   height: 50px;
   border-radius: 20px;
-  background-color: rgb(43, 43, 43);
   color: snow;
-  font-family: 'Josefin Sans';
+  font-family: "Josefin Sans";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,15 +335,28 @@
   text-decoration: none;
 }
 
-.descripcion-sector .boton-megadat span{
+.descripcion-sector .boton-web span {
   text-shadow: 0 0 2px #000;
 }
 
-.descripcion-sector .boton-megadat:hover{
+#megadat .descripcion-sector .boton-web {
+  background-color: rgb(43, 43, 43);
+}
+
+#megadat .descripcion-sector .boton-web:hover {
   background-color: rgba(89, 88, 88, 0.647);
 }
 
-.descripcion-sector .github-ICO{
+#brittania .descripcion-sector .boton-web {
+  background-color: #d7447c;
+}
+
+#brittania .descripcion-sector .boton-web:hover {
+  background-color: rgb(110, 9, 66);
+}
+
+
+.descripcion-sector .github-ICO {
   cursor: pointer;
   width: 60px;
   height: 60px;
@@ -215,28 +368,61 @@
   margin: 5px;
   background-image: url(~src/assets/images/redes_sociales/github.png);
   box-shadow: 0 5px 5px #000;
+  transition: 0.1s;
 }
 
+.descripcion-sector .github-ICO:hover {
+  transform: translateY(-5px);
+}
+
+#brittania .descripcion-sector .github-ICO {
+  background-blend-mode:color-dodge;
+  background-color: #d7447c;
+}
 
 @media (max-width: 900px) {
-  .magadat-box{
+  .web-box {
     flex-direction: column;
     height: auto;
   }
 
-  .imagen-sector{
+  #brittania{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .imagen-sector {
     width: 100%;
     height: auto;
     padding: 20px;
   }
 
-  .imagen-megadat{
+  .imagen-web {
     height: 200px;
     width: 400px;
   }
 
-  .descripcion-sector{
+  .descripcion-sector {
     width: 100%;
   }
+}
 
+@media (max-width: 500px) {
+  .descripcion-sector .boton-web{
+    align-self: flex-start;
+    margin-left: 0;
+  }
+
+}
+
+@media (max-width:  350px){
+  .descripcion-sector .boton-web{
+    width: 150px;
+    align-self: center;
+  }
+
+  .descripcion-sector .github-ICO{
+    position: relative;
+    align-self: center;
+  }
 }

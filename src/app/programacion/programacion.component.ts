@@ -1,5 +1,5 @@
 import { ProgramacionService } from './../service/programacion.service';
-import { AfterViewInit, Component, ElementRef, HostListener, OnInit, QueryList, Renderer2, ViewChild, ViewChildren } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, OnInit, QueryList, Renderer2, ViewChild, ViewChildren} from '@angular/core';
 import lenguajesData from '../../assets/jsons/lenguajes.json';
 
 @Component({

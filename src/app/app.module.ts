@@ -1,5 +1,5 @@
 import { AnimacionesService } from './service/animaciones.service';
-import { NgModule, Component } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
