@@ -1,7 +1,7 @@
 [
   {
-    "nombre": "Escuela Da Vinci",
-    "descripcion": "Desde mayo de 2021 hasta fines de agosto, estuve realizando un curso de motion graphics publicitario donde mejoré mi habilidad como animador.  Gracias a las tareas del mismo pudieron salir proyectos animados propios de los cuales pude sacar mucha experiencia y aprendizaje. ",
+    "nombre": "UBA",
+    "descripcion": "La Universidad de Buenos Aires, más específicamente en la universidad de ciencias exactas,  es donde estudio la carrera de Lic. en Ciencias de la computación, con el fin de mejorar cada vez más mis conocimientos sobre sistemas y poder conseguir un título que me permita encarar mis ambiciones a un nivel internacional.",
     "pendiente": false
   },
   {
@@ -10,18 +10,18 @@
     "pendiente": false
   },
   {
-    "nombre": "Dirección de la juventud.",
-    "descripcion": "La dirección de la juventud es un centro de talleres gratuitos en san isidro donde gente de cualquier edad puede elegir realizar el o los cursos que ellos prefieran. En este lugar fue donde a los 16 años realicé un curso de cine, donde aprendí mucho sobre el mundo audiovisual, además de poder realizar y editar mi primer cortometraje. ",
-    "pendiente": false
-  },
-  {
     "nombre": "Udemy",
     "descripcion": "Udemy es un foro reconocido por sus cursos y talleres de alto nivel. En esta página es donde pude desarrollar la mayoría de conocimientos que manejo hoy de java ya que actualmente curso un taller de +100 horas donde no solamente se enseña en profundidad el lenguaje sino también los frameworks de Spring, Angular, entre otras tecnologías.",
     "pendiente": false
   },
   {
-    "nombre": "UBA",
-    "descripcion": "La Universidad de Buenos Aires, más específicamente en la universidad de ingeniería,  es donde estudio la carrera de Lic. en Análisis de sistemas, con el fin de mejorar cada vez más mis conocimientos sobre sistemas y poder conseguir un título que me permita encarar mis ambiciones a un nivel internacional.",
+    "nombre": "Escuela Da Vinci",
+    "descripcion": "Desde mayo de 2021 hasta fines de agosto, estuve realizando un curso de motion graphics publicitario donde mejoré mi habilidad como animador.  Gracias a las tareas del mismo pudieron salir proyectos animados propios de los cuales pude sacar mucha experiencia y aprendizaje. ",
+    "pendiente": false
+  },
+  {
+    "nombre": "Dirección de la juventud.",
+    "descripcion": "La dirección de la juventud es un centro de talleres gratuitos en san isidro donde gente de cualquier edad puede elegir realizar el o los cursos que ellos prefieran. En este lugar fue donde a los 16 años realicé un curso de cine, donde aprendí mucho sobre el mundo audiovisual, además de poder realizar y editar mi primer cortometraje. ",
     "pendiente": false
   }
 ]
