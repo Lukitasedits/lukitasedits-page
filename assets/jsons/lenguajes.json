@@ -34,6 +34,10 @@
         "descripcion": "Este lenguaje sirve para configurarlos distintos estilos que podemos aplicarle a nuestra estructura HTML."
       },
       {
+        "nombre": "THREEJS",
+        "descripcion": "Una librería para trabajar con programación 3D en javascript."
+      },
+      {
         "nombre": "Angular",
         "descripcion": "Este Framework desarrollado en typescript nos sirve para administrar de forma reactiva los datos del front-end."
       }
