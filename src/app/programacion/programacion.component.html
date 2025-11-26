@@ -10,7 +10,7 @@
       autoplay
       [muted]="true"
       loop
-      src="assets/videos/extras/Animacion_programacion.mp4"
+      [src]="'assets/videos/extras/Animacion_programacion.mp4'"
     ></video>
   </div>
 </div>
@@ -46,7 +46,6 @@
           muted
           controls
           onloadedmetadata="this.muted = true"
-          oncanplay="this.play()"
           id="video-autoplay"
           >
           <source
@@ -63,6 +62,33 @@
           <br/>
           Con una interfaz dinámica y con un sistema de registro y logueado de usuarios, pude practicar sobre el uso de tecnologías como <strong>Spring boot security</strong> y <strong>JWT</strong>.
           </p>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="i == 1" alt="Cubo Rubik 3D">
+      <div class="web-box" id="cube">
+        <div class="imagen-sector">
+          <div class="imagen-web" #imagenCubo></div>
+        </div>
+        <div class="descripcion-sector">
+          <b> Cubo Rubik 3D</b>
+          <p>
+            Diseñé, modelé y programé con la librería threejs, un cubo rubik 3D completamente interactivo y funcional.
+            <br />
+            Puse en práctica la unión de varios intereses que tengo desde hace tiempo: El 3D, la matemática y la programación. Tiene la capacidad de mezclarse y que el usuario pueda jugar con él.
+          </p>
+          <a
+            class="boton-web"
+            target="_blank"
+            href="https://lukitasedits.github.io/3Dcube/"
+            >IR A VERLA!</a
+          >
+          <a
+            class="github-ICO"
+            href="https://github.com/Lukitasedits/3Dcube"
+            target="_blank"
+          ></a>
         </div>
       </div>
     </div>
@@ -134,7 +160,6 @@
           muted
           controls
           onloadedmetadata="this.muted = true"
-          oncanplay="this.play()"
           id="video-autoplay"
           >
           <source
@@ -146,9 +171,9 @@
       <div class="descripcion-video-sector">
         <h1><b>Buscaminas</b></h1>
         <p>
-          Programé una aplicación con Angular y Spring Boot (java) que ayuda a los usuarios a registrar la información sobre las figuritas del album del Mundial 2022 para que sigan el rastro de cuánto les falta y cuáles tiene repetidas.
+          A través del lenguaje Delphi, desarrollé un videojuego funcional y entretenida.
           <br/>
-          Con una interfaz dinámica y con un sistema de registro y logueado de usuarios, pude practicar sobre el uso de tecnologías como <strong>Spring boot security</strong> y <strong>JWT</strong>.
+          Programé el conocido videojuego "Buscaminas", en este proyecto pude poner en práctica que cualquier desafío lógico que se me imponga, puedo resolverlo.
           </p>
         </div>
       </div>

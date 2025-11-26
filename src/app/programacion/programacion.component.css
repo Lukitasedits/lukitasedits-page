@@ -198,7 +198,7 @@
   background-position: center center;
   background-repeat:  no-repeat;
   background-blend-mode:soft-light;
-  background-image: url(~src/assets/images/extras/Separador.png);
+  background-image: url('~src/assets/images/extras/Separador.png');
 }
 
 @media (max-width: 1050px){
@@ -207,6 +207,7 @@
     height: auto;
     align-self: center;
   }
+
 
   .app-box .video-sector{
     width: 100%;
@@ -218,11 +219,20 @@
   }
 }
 
+
+@media (max-width: 850px) {
+  #buscaminas-app{
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 530px) {
   .app-box{
     margin-top: 30px;
     width: 100vw;
   }
+
+
   .app-box .video-sector{
     padding: 0px;
   }
@@ -259,6 +269,10 @@
   justify-content: center;
 }
 
+#cube .imagen-sector {
+  background-color: rgb(57, 219, 255);
+}
+
 #megadat .imagen-sector {
   background-color: rgb(30, 30, 30);
 }
@@ -274,12 +288,16 @@
   background-size: cover;
 }
 
+#cube .imagen-web {
+  background-image: url('~src/assets/images/screenshots/screenshot-cube.jpg');
+}
+
 #megadat .imagen-web {
-  background-image: url(~src/assets/images/screenshots/screenshot-megadat.jpg);
+  background-image: url('~src/assets/images/screenshots/screenshot-megadat.jpg');
 }
 
 #brittania .imagen-web {
-  background-image: url(~src/assets/images/screenshots/screenshot-brittania.jpg);
+  background-image: url('~src/assets/images/screenshots/screenshot-brittania.jpg');
 }
 
 .descripcion-sector {
@@ -292,6 +310,10 @@
   flex-direction: column;
   justify-content: space-around;
   position: relative;
+}
+
+#cube .descripcion-sector {
+  background-color: rgb(3, 2, 18);
 }
 
 #megadat .descripcion-sector {
@@ -339,6 +361,14 @@
   text-shadow: 0 0 2px #000;
 }
 
+#cube .descripcion-sector .boton-web {
+  background-color: rgb(57, 219, 255);
+}
+
+#cube .descripcion-sector .boton-web:hover {
+  background-color: rgb(22, 115, 147);
+}
+
 #megadat .descripcion-sector .boton-web {
   background-color: rgb(43, 43, 43);
 }
@@ -366,13 +396,23 @@
   right: 10px;
   bottom: 10px;
   margin: 5px;
-  background-image: url(~src/assets/images/redes_sociales/github.png);
+  background-image: url('~src/assets/images/redes_sociales/github.png');
   box-shadow: 0 5px 5px #000;
   transition: 0.1s;
 }
 
 .descripcion-sector .github-ICO:hover {
   transform: translateY(-5px);
+}
+
+#cube .descripcion-sector .github-ICO {
+  background-blend-mode:color-dodge;
+  background-color: rgb(57, 219, 255);
+}
+
+#megadat .descripcion-sector .github-ICO {
+  background-blend-mode:color-dodge;
+  background-color: rgb(43, 43, 43);
 }
 
 #brittania .descripcion-sector .github-ICO {
