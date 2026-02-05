@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Mulish&family=Raleway:wght@200&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Mulish&family=Raleway:wght@200&display=swap");
 
 .main_box {
-  background-image: url('~src/assets/images/lukitasedits/Banner_lukitasedits.jpg');
+  background-image: url("~src/assets/images/lukitasedits/Banner_lukitasedits.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -16,7 +15,7 @@
   background-color: #000;
 }
 
-.main_box h1{
+.main_box h1 {
   position: absolute;
   top: calc(50% - 65px);
   color: aliceblue;
@@ -25,13 +24,13 @@
   z-index: +1;
 }
 
-@media (max-width:500px){
-  .main_box h1{
+@media (max-width: 500px) {
+  .main_box h1 {
     font-size: 40px;
   }
 }
 
-app-cueva{
+app-cueva {
   position: absolute;
   right: 0px;
   left: 0px;
@@ -44,11 +43,11 @@ app-cueva{
   height: auto;
 }
 
-.main_box h1:focus{
-  cursor:default;
+.main_box h1:focus {
+  cursor: default;
 }
 
-.mensaje_box{
+.mensaje_box {
   height: 400px;
   background-color: rgb(116 60 188);
   text-align: center;
@@ -60,11 +59,10 @@ app-cueva{
   color: white;
 }
 
-.mensaje_box span{
-
+.mensaje_box span {
 }
 
-.galeria_animaciones{
+.galeria_animaciones {
   background-size: cover;
   background-position: center center;
   width: 100%;
@@ -72,7 +70,7 @@ app-cueva{
   position: relative;
 }
 
-.color-overlay{
+.color-overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -81,10 +79,9 @@ app-cueva{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
 }
 
-.titulo{
+.titulo {
   color: aliceblue;
   text-align: center;
   margin: 15px;
@@ -92,34 +89,34 @@ app-cueva{
   text-shadow: 0px 0 5px black;
 }
 
-.play{
+.play {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
 }
 
-.play:hover{
+.play:hover {
   cursor: pointer;
   text-shadow: 0 0 3px white;
 }
 
-.btn_play{
+.btn_play {
   margin-right: 10px;
-  background-image: url('~src/assets/images/botones/Btn_play.png');
+  background-image: url("~src/assets/images/botones/Btn_play.png");
   background-size: cover;
   height: 40px;
   width: 40px;
 }
 
-.repro_vid{
-  color:aliceblue;
+.repro_vid {
+  color: aliceblue;
   font-size: 20px;
   text-decoration: underline;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
-.btn_mov{
+.btn_mov {
   margin: 10px;
   background-size: cover;
   background-position: center center;
@@ -127,18 +124,17 @@ app-cueva{
   width: 40px;
   cursor: pointer;
   transition: 0.2s all ease;
-  }
-
-.btn_izquierda{
-  background-image: url('~src/assets/images/botones/Btn_left.png');
 }
 
-.btn_derecha{
-  background-image: url('~src/assets/images/botones/Btn_right.png');
+.btn_izquierda {
+  background-image: url("~src/assets/images/botones/Btn_left.png");
 }
 
+.btn_derecha {
+  background-image: url("~src/assets/images/botones/Btn_right.png");
+}
 
-.item_central{
+.item_central {
   width: 400px;
   display: flex;
   align-items: center;
@@ -146,7 +142,7 @@ app-cueva{
   flex-direction: column;
 }
 
-.programacion_box{
+.programacion_box {
   width: 100%;
   height: 600px;
   background-color: rgb(44, 44, 44);
@@ -156,20 +152,20 @@ app-cueva{
   flex-direction: column;
 }
 
-.programacion_box .programacion_titulo{
+.programacion_box .programacion_titulo {
   color: white;
   font-size: 30px;
   margin-bottom: 70px;
 }
 
-.programacion_box .lenguajes{
+.programacion_box .lenguajes {
   width: 70%;
   height: 300px;
   display: flex;
   justify-content: space-between;
 }
 
-.programacion_box .lenguajes .lenguaje{
+.programacion_box .lenguajes .lenguaje {
   width: 33%;
   height: 100%;
   display: flex;
@@ -179,7 +175,7 @@ app-cueva{
   overflow: hidden;
 }
 
-.programacion_box .lenguajes .lenguaje .imagen_lenguaje{
+.programacion_box .lenguajes .lenguaje .imagen_lenguaje {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -189,141 +185,150 @@ app-cueva{
   box-shadow: 0 2px 10px #000;
 }
 
-.programacion_box .lenguajes .lenguaje .imagen_lenguaje:hover{
+.programacion_box .lenguajes .lenguaje .imagen_lenguaje:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 10px #000;
 }
 
-.programacion_box .lenguajes .lenguaje .nombre_lenguaje{
+.programacion_box .lenguajes .lenguaje .nombre_lenguaje {
   color: aliceblue;
   font-size: 20px;
 }
 
-.delphi_ico{
+.delphi_ico {
   background-image: url(~src/assets/images/iconos_lenguajes/Delphi_ICO.png);
 }
 
-.java_ico{
-  background-image: url('~src/assets/images/iconos_lenguajes/Java_ICO.png');
+.java_ico {
+  background-image: url("~src/assets/images/iconos_lenguajes/Java_ICO.png");
 }
 
-.web_ico{
-  background-image: url('~src/assets/images/iconos_lenguajes/Web_ICO.png');
+.web_ico {
+  background-image: url("~src/assets/images/iconos_lenguajes/Web_ICO.png");
 }
 
-.experience_box{
-  background-color: lavender;
-  width: 100%;
-  height: 1400px;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.box{
-  height: 697.5px;
-  display: flex;
-  margin: 1.5%;
-  justify-content: space-between;
-}
-
-
-.separador_box{
-  position:absolute;
-  top: 50%;
-  width: 100%;
-  height: 0px;
-  border-bottom: 5px rgb(155, 235, 228) dashed;
-}
-
-.experience_box .box .descripcion{
-  width: 30%;
-  height: 100%;
-}
-
-.experience_box .box .box_img {
-  height: 100%;
-  width: 50%;
-  background-image: url(~src/assets/images/portadas_experiencia/Twitch.jpg);
-  background-size: cover;
-  background-position: center center;
-}
-
-.experience_box .box .emprendimientos_img{
-  background-image: url(~src/assets/images/portadas_experiencia/Emprendimientos.jpg);
-  background-size: cover;
-  background-position: center center;
-}
-
-.experience_box .box .descripcion{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  position: relative;
-  margin: 0 100px;
-}
-
-.experience_box .box .descripcion h1{
-  color: blueviolet;
-}
-
-.experience_box .box .descripcion span{
-  color: dimgray;
-}
-
-.experience_box .box .descripcion .ver_mas{
-  color: white;
-  margin-top: 25px;
-  background-color: blueviolet;
-  width: 100px;
-  height: 40px;
-  border-radius: 20px;
+.info_personal {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 5px;
-  cursor: pointer;
-  transition: all 0.2s ease;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 60px;
 }
 
-.experience_box .box .descripcion .ver_mas:hover{
-  transform: translateY(-2.5px);
-  box-shadow: 0 2px 4px black;
-  bottom: 2px;
+.info_personal .sobre_mi {
+  font-size: 30px;
+  margin-bottom: 70px;
 }
 
-@media(max-width:900px){
-  .box{
-    flex-direction: column;
-    align-items: center;
-  }
-  .experience_box .box .descripcion{
-    width: 80%;
-    align-items: center;
-  }
+.info_personal .personal_wrapper {
+  width: 90vw;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 130px;
+}
 
-  .experience_box .box .box_img{
-    order:-1;
-    margin: 20px;
-  }
+.info_personal .personal_wrapper .descripcion {
+  width: 40%;
+  border-radius: 10px;
+  text-align: justify;
+  font-size: 20px;
+  color: white;
+  font-family: "Inter";
+  overflow-x: hidden;
+  background-color: blueviolet;
+  z-index: 10;
+}
 
-  .experience_box .box .descripcion h1{
-    text-align: center;
-  }
-  .experience_box .box .descripcion p{
-    text-align: center;
-  }
+.info_personal .personal_wrapper .descripcion .contenido {
+  position: absolute;
+  width: 100%;
+  padding: 60px;
+}
 
-  .experience_box .box .descripcion .ver_mas{
-    margin-bottom: 40px;
+.info_personal .personal_wrapper .descripcion .contenido a {
+  color: rgb(83, 226, 226) !important;
+}
+
+.info_personal .personal_wrapper .descripcion .cursor {
+  color: white;
+  animation: blink 1s step-end infinite;
+  font-weight: 100;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
   }
 }
 
-.form-contacto{
+.info_personal .personal_wrapper .descripcion .placeholder {
+  width: 100%;
+  padding: 60px;
+  opacity: 0;
+}
+
+.info_personal .personal_wrapper .character_wrapper {
+  width: 40%;
+  height: 300px;
+  border-radius: 10px;
+  background: linear-gradient(0, rgba(0, 0, 0, 1) 0%, rgb(40, 40, 40) 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.5s all ease;
+}
+
+.info_personal .personal_wrapper .character_wrapper app-character {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 1400px) {
+  .info_personal .sobre_mi {
+    margin-bottom: 0;
+  }
+
+  .info_personal .personal_wrapper {
+    flex-direction: column-reverse;
+    padding-top: 0;
+    gap: 0;
+  }
+
+  .info_personal .personal_wrapper .descripcion {
+    width: 100%;
+  }
+
+  .info_personal .personal_wrapper .descripcion .contenido {
+    position: relative;
+  }
+
+  .info_personal .personal_wrapper .descripcion .placeholder {
+    display: none;
+  }
+
+  .info_personal .personal_wrapper .character_wrapper {
+    width: 100%;
+    background: none;
+    overflow: hidden;
+  }
+
+  .info_personal .personal_wrapper .character_wrapper app-character {
+    margin-bottom: -400px;
+  }
+}
+
+.form-contacto {
   height: 700px;
   width: 100%;
-  background-image: url('~src/assets/images/extras/Fondo_contacto.jpg');
+  background-image: url("~src/assets/images/extras/Fondo_contacto.jpg");
   background-position: center center;
   background-size: cover;
   background-color: rgb(39, 31, 53);
@@ -333,30 +338,29 @@ app-cueva{
   align-items: center;
 }
 
-.form-contacto form{
+.form-contacto form {
   width: 70%;
   height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: 0.5s all
+  transition: 0.5s all;
 }
 
-@media(max-width:900px){
-  .form-contacto form{
+@media (max-width: 900px) {
+  .form-contacto form {
     width: 100%;
   }
 }
 
-.info_personal{
+.form_mail_name {
   width: 70%;
   height: 40px;
   display: flex;
   justify-content: space-between;
-
 }
-.form-contacto form input{
+.form-contacto form input {
   color: aliceblue;
   border: none;
   border-bottom: 1px aliceblue solid;
@@ -366,22 +370,21 @@ app-cueva{
   margin: 20px;
 }
 
-.form-contacto form .info_personal input{
-  margin:  0;;
+.form-contacto form .info_personal input {
+  margin: 0;
   width: 49%;
 }
 
-.form-contacto form input::placeholder{
+.form-contacto form input::placeholder {
   color: aliceblue;
-  opacity: .7;
+  opacity: 0.7;
 }
 
-
-.form-contacto form input:hover{
+.form-contacto form input:hover {
   border: 1px aliceblue solid;
 }
 
-.form-contacto form textarea{
+.form-contacto form textarea {
   color: aliceblue;
   border: 1px aliceblue solid;
   width: 70%;
@@ -390,12 +393,12 @@ app-cueva{
   padding: 10px;
   resize: none;
 }
-.form-contacto form textarea::placeholder{
+.form-contacto form textarea::placeholder {
   color: aliceblue;
-  opacity: .7;
+  opacity: 0.7;
 }
 
-.form-contacto form button{
+.form-contacto form button {
   margin: 20px;
   width: 70%;
   height: 45px;
@@ -405,7 +408,7 @@ app-cueva{
   transition: all 0.2s;
 }
 
-.form-contacto form button:hover{
+.form-contacto form button:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: aliceblue;
   border: 1px solid aliceblue;

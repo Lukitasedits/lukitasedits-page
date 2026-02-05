@@ -15,8 +15,8 @@ import { TwitchComponent } from './twitch/twitch.component';
 import { ReproductorTwitchComponent } from './reproductor-twitch/reproductor-twitch.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormacionYProyectosComponent } from './formacion-yproyectos/formacion-yproyectos.component';
-import { InformacionPersonalComponent } from './informacion-personal/informacion-personal.component';
 import { CuevaComponent } from './cueva/cueva.component';
+import { CharacterComponent } from './character/character.component';
 
 const routes : Routes = [
   {path:'', redirectTo:'/inicio', pathMatch:'full'},
@@ -24,8 +24,7 @@ const routes : Routes = [
   {path:'emprendimientos', component: EmprendimientosComponent},
   {path:'programacion', component: ProgramacionComponent},
   {path:'twitch', component: TwitchComponent},
-  {path:'formacion', component: FormacionYProyectosComponent},
-  {path: 'informacion-personal', component: InformacionPersonalComponent}
+  {path:'formacion', component: FormacionYProyectosComponent}
 ]
 
 @NgModule({
@@ -40,8 +39,8 @@ const routes : Routes = [
     TwitchComponent,
     ReproductorTwitchComponent,
     FormacionYProyectosComponent,
-    InformacionPersonalComponent,
-    CuevaComponent
+    CuevaComponent,
+    CharacterComponent
   ],
   imports: [
     BrowserModule,
