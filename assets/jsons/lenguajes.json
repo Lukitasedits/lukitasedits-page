@@ -26,20 +26,16 @@
     "nombre": "Web",
     "tecnologia": [
       {
-        "nombre": "HTML",
-        "descripcion": "El lenguaje básico del desarrollo web, con él establecemos el marcado de la estructura de nuestra página."
-      },
-      {
-        "nombre": "CSS",
-        "descripcion": "Este lenguaje sirve para configurarlos distintos estilos que podemos aplicarle a nuestra estructura HTML."
-      },
-      {
-        "nombre": "THREEJS",
-        "descripcion": "Una librería para trabajar con programación 3D en javascript."
-      },
-      {
         "nombre": "Angular",
-        "descripcion": "Este Framework desarrollado en typescript nos sirve para administrar de forma reactiva los datos del front-end."
+        "descripcion": "Framework integral desarrollado en typescript. Este sirve para construir aplicaciones web en una sola página (SPA)."
+      },
+      {
+        "nombre": "React native",
+        "descripcion": "Framework para desarrollar aplicaciones móviles nativas utilizando React."
+      },
+      {
+        "nombre": "ThreeJS",
+        "descripcion": "Librería para trabajar con programación 3D en javascript."
       }
     ]
   },
