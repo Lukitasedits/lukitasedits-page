@@ -43,40 +43,79 @@
       <div class="app-box" id="mundial-app">
         <div class="video-sector">
           <video
-          muted
-          controls
-          onloadedmetadata="this.muted = true"
-          id="video-autoplay"
+            muted
+            controls
+            onloadedmetadata="this.muted = true"
+            id="video-autoplay"
           >
-          <source
-          src="assets/videos/extras/mundial-preview.mp4"
-          type="video/mp4"
-          />
-        </video>
-      </div>
-      <div class="descripcion-video-sector">
-        <h1><b>App Album mundial - Fullstack</b></h1>
-        <div class="separador-mundial"></div>
-        <p>
-          Programé una aplicación con Angular y Spring Boot (java) que ayuda a los usuarios a registrar la información sobre las figuritas del album del Mundial 2022 para que sigan el rastro de cuánto les falta y cuáles tiene repetidas.
-          <br/>
-          Con una interfaz dinámica y con un sistema de registro y logueado de usuarios, pude practicar sobre el uso de tecnologías como <strong>Spring boot security</strong> y <strong>JWT</strong>.
+            <source
+              src="assets/videos/extras/mundial-preview.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="descripcion-video-sector">
+          <h1><b>App Album mundial - Fullstack</b></h1>
+          <div class="separador-mundial"></div>
+          <p>
+            Programé una aplicación con Angular y Spring Boot (java) que ayuda a
+            los usuarios a registrar la información sobre las figuritas del
+            album del Mundial 2022 para que sigan el rastro de cuánto les falta
+            y cuáles tiene repetidas.
+            <br />
+            Con una interfaz dinámica y con un sistema de registro y logueado de
+            usuarios, pude practicar sobre el uso de tecnologías como
+            <strong>Spring boot security</strong> y <strong>JWT</strong>.
           </p>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="i == 1">
+      <div class="web-box" id="calculator">
+        <div class="video-sector">
+          <video
+            muted
+            controls
+            onloadedmetadata="this.muted = true"
+            id="video-autoplay"
+          >
+            <source
+              src="assets/videos/extras/calculadora-preview.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="descripcion-sector">
+          <b>Calculadora</b>
+          <p>
+            Calculadora completamente funcional desarrollada en
+            <strong>React Native</strong>. Su interfaz fue inspirada a la
+            aplicación de IOS y en ella se pueden realizar todo tipo de
+            operaciones básicas. <br />
+            Su diseño fue pensado para poder ser utilizada tanto en dispositivos
+            móbiles como de escritorio.
+          </p>
+          <a
+            class="github-ICO"
+            href="https://github.com/Lukitasedits/calculadora-react-native"
+            target="_blank"
+          ></a>
         </div>
       </div>
     </div>
 
     <div *ngIf="i == 1" alt="Cubo Rubik 3D">
       <div class="web-box" id="cube">
-        <div class="imagen-sector">
-          <div class="imagen-web" #imagenCubo></div>
-        </div>
         <div class="descripcion-sector">
           <b> Cubo Rubik 3D</b>
           <p>
-            Diseñé, modelé y programé con la librería threejs, un cubo rubik 3D completamente interactivo y funcional.
+            Diseñé, modelé y programé con la librería threejs, un cubo rubik 3D
+            completamente interactivo y funcional.
             <br />
-            Puse en práctica la unión de varios intereses que tengo desde hace tiempo: El 3D, la matemática y la programación. Tiene la capacidad de mezclarse y que el usuario pueda jugar con él.
+            Puse en práctica la unión de varios intereses que tengo desde hace
+            tiempo: El 3D, la matemática y la programación. Tiene la capacidad
+            de mezclarse y que el usuario pueda jugar con él.
           </p>
           <a
             class="boton-web"
@@ -89,6 +128,9 @@
             href="https://github.com/Lukitasedits/3Dcube"
             target="_blank"
           ></a>
+        </div>
+        <div class="imagen-sector">
+          <div class="imagen-web" #imagenCubo></div>
         </div>
       </div>
     </div>
@@ -157,23 +199,26 @@
       <div class="app-box" id="buscaminas-app">
         <div class="video-sector">
           <video
-          muted
-          controls
-          onloadedmetadata="this.muted = true"
-          id="video-autoplay"
+            muted
+            controls
+            onloadedmetadata="this.muted = true"
+            id="video-autoplay"
           >
-          <source
-          src="assets/videos/extras/buscaminas-preview.mp4"
-          type="video/mp4"
-          />
-        </video>
-      </div>
-      <div class="descripcion-video-sector">
-        <h1><b>Buscaminas</b></h1>
-        <p>
-          A través del lenguaje Delphi, desarrollé un videojuego funcional y entretenida.
-          <br/>
-          Programé el conocido videojuego "Buscaminas", en este proyecto pude poner en práctica que cualquier desafío lógico que se me imponga, puedo resolverlo.
+            <source
+              src="assets/videos/extras/buscaminas-preview.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="descripcion-video-sector">
+          <h1><b>Buscaminas</b></h1>
+          <p>
+            A través del lenguaje Delphi, desarrollé un videojuego funcional y
+            entretenida.
+            <br />
+            Programé el conocido videojuego "Buscaminas", en este proyecto pude
+            poner en práctica que cualquier desafío lógico que se me imponga,
+            puedo resolverlo.
           </p>
         </div>
       </div>

@@ -22,7 +22,7 @@ export class InicioComponent implements OnInit {
   charIndex: number = 0;
   descripcionPersonal = descripcionJson.descripcion;
   descripcionPersonalDisplay: string = '';
-  defaultTypingSpeed = 35;
+  defaultTypingSpeed = 17;
   typingSpeed = this.defaultTypingSpeed + 0;
   closeHtmlCount = 0;
 
@@ -32,7 +32,7 @@ export class InicioComponent implements OnInit {
     private modalService: ModalService,
     private animacionesService: AnimacionesService,
     public router: Router,
-    private programacionService: ProgramacionService
+    private programacionService: ProgramacionService,
   ) {}
 
   ngOnInit(): void {
@@ -48,7 +48,7 @@ export class InicioComponent implements OnInit {
     if (this.charIndex < this.descripcionPersonal.length) {
       // Agrega el siguiente carácter a descripcionPersonalDisplay
       this.descripcionPersonalDisplay += this.descripcionPersonal.charAt(
-        this.charIndex
+        this.charIndex,
       );
       this.charIndex++;
 
