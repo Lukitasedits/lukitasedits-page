@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { SiteContextService } from '../service/site-context.service';
 
 @Component({
   selector: 'app-header',
@@ -14,9 +15,13 @@ export class HeaderComponent implements OnInit {
   menu_abierto:boolean[] = [false, true, false];
   nombres:string[]= ['Lucas', 'Bruno', 'Juampi'];
 
-  constructor(public modal:NgbModal, public router: Router) { }
+  /** En pragmify.it el menú se limita a Home, Privacidad y Términos. */
+  isPragmify = false;
+
+  constructor(public modal:NgbModal, public router: Router, private siteContext: SiteContextService) { }
 
   ngOnInit(): void {
+    this.isPragmify = this.siteContext.isPragmify();
   }
 
   crecerLinea(){
@@ -24,6 +29,6 @@ export class HeaderComponent implements OnInit {
   }
 
   alInicio(){
-    this.router.navigate(['/inicio']);
+    this.router.navigate([this.isPragmify ? '/pragmify' : '/inicio']);
   }
 }

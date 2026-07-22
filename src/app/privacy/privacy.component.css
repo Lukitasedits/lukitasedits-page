@@ -1,0 +1,111 @@
+.legal-fondo {
+  width: 100%;
+  background-color: aliceblue;
+  color: rgb(14, 26, 44);
+}
+
+.legal-cabecera {
+  width: 100%;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(14, 26, 44);
+  background-image: linear-gradient(120deg, rgb(14, 26, 44), rgb(48, 12, 22));
+}
+
+.legal-cabecera h1 {
+  color: azure;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.legal-cabecera .bajada {
+  color: #ff6b74;
+  font-weight: bold;
+  margin-top: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.legal-cabecera .fecha {
+  color: #b9c2d0;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.legal-contenido {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 50px 8% 70px 8%;
+  box-sizing: border-box;
+}
+
+.legal-contenido section {
+  margin-bottom: 34px;
+}
+
+.legal-contenido h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  border-left: 4px solid #d91828;
+  padding-left: 12px;
+}
+
+.legal-contenido p {
+  font-size: 16px;
+  line-height: 1.65;
+  text-align: justify;
+}
+
+.legal-contenido ul {
+  line-height: 1.65;
+  font-size: 16px;
+}
+
+.legal-contenido li {
+  margin-bottom: 10px;
+}
+
+.legal-contenido a {
+  color: #9a0e18;
+  font-weight: bold;
+}
+
+.legal-contenido .destacado {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 18px 22px;
+  box-shadow: 0 4px 12px rgba(14, 26, 44, 0.08);
+  border-left: 4px solid #d91828;
+}
+
+.legal-nav {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.legal-nav a {
+  display: inline-block;
+  color: #d91828;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 22px;
+  border: 1px solid rgba(217, 24, 40, 0.4);
+  border-radius: 22px;
+  transition: all 0.3s ease;
+}
+
+.legal-nav a:hover {
+  background-color: #d91828;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  .legal-contenido { padding: 40px 6% 60px 6%; }
+  .legal-contenido p,
+  .legal-contenido ul { font-size: 15px; }
+  .legal-cabecera h1 { font-size: 28px; }
+}

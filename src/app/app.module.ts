@@ -17,14 +17,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormacionYProyectosComponent } from './formacion-yproyectos/formacion-yproyectos.component';
 import { CuevaComponent } from './cueva/cueva.component';
 import { CharacterComponent } from './character/character.component';
+import { PragmifyComponent } from './pragmify/pragmify.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { TermsComponent } from './terms/terms.component';
+import { PragmifyAccessGuard } from './guard/pragmify-access.guard';
 
 const routes : Routes = [
   {path:'', redirectTo:'/inicio', pathMatch:'full'},
-  {path:'inicio', component: InicioComponent},
-  {path:'emprendimientos', component: EmprendimientosComponent},
-  {path:'programacion', component: ProgramacionComponent},
-  {path:'twitch', component: TwitchComponent},
-  {path:'formacion', component: FormacionYProyectosComponent}
+  {path:'inicio', component: InicioComponent, canActivate: [PragmifyAccessGuard]},
+  {path:'pragmify', component: PragmifyComponent, canActivate: [PragmifyAccessGuard]},
+  {path:'privacy', component: PrivacyComponent, canActivate: [PragmifyAccessGuard]},
+  {path:'terms', component: TermsComponent, canActivate: [PragmifyAccessGuard]},
+  {path:'emprendimientos', component: EmprendimientosComponent, canActivate: [PragmifyAccessGuard]},
+  {path:'programacion', component: ProgramacionComponent, canActivate: [PragmifyAccessGuard]},
+  {path:'twitch', component: TwitchComponent, canActivate: [PragmifyAccessGuard]},
+  {path:'formacion', component: FormacionYProyectosComponent, canActivate: [PragmifyAccessGuard]}
 ]
 
 @NgModule({
@@ -40,7 +47,10 @@ const routes : Routes = [
     ReproductorTwitchComponent,
     FormacionYProyectosComponent,
     CuevaComponent,
-    CharacterComponent
+    CharacterComponent,
+    PragmifyComponent,
+    PrivacyComponent,
+    TermsComponent
   ],
   imports: [
     BrowserModule,

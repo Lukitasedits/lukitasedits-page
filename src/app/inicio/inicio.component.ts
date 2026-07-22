@@ -92,6 +92,11 @@ export class InicioComponent implements OnInit {
     this.document.documentElement.scrollTop = 0;
   }
 
+  routeToPragmify() {
+    this.router.navigate(['/pragmify']);
+    this.document.documentElement.scrollTop = 0;
+  }
+
   goToJava() {
     this.router.navigate(['/programacion']);
     setTimeout(() => {

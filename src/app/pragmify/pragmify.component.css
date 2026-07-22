@@ -1,0 +1,196 @@
+.fondo {
+  width: 100%;
+  height: auto;
+  background-color: aliceblue;
+  color: rgb(14, 26, 44);
+}
+
+/* Encabezado */
+.cabecera {
+  width: 100%;
+  min-height: 220px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(14, 26, 44);
+  background-image: linear-gradient(120deg, rgb(14, 26, 44), rgb(48, 12, 22));
+  text-align: center;
+}
+
+.cabecera h1 {
+  color: azure;
+  letter-spacing: 4px;
+  margin: 0;
+}
+
+.cabecera .bajada {
+  color: #ff6b74;
+  font-weight: bold;
+  margin-top: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+/* Bloques */
+.bloque {
+  width: 100%;
+  padding: 60px 8%;
+  box-sizing: border-box;
+}
+
+.bloque h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.texto {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.texto p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Alternancia de fondos para separar secciones */
+.qbloque { background-color: rgb(207, 252, 249); }
+.caracteristicas { background-color: aliceblue; }
+.api { background-color: rgb(234, 214, 247); }
+.pasos { background-color: aliceblue; }
+
+/* Tarjetas */
+.grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card, .paso {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(14, 26, 44, 0.08);
+  border-top: 4px solid #d91828;
+}
+
+.card h3, .paso h3 {
+  margin: 0 0 10px 0;
+  color: rgb(14, 26, 44);
+}
+
+.card p, .paso p {
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* API de Google Ads */
+.api ul {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.api li { margin-bottom: 12px; }
+
+.api .legal {
+  font-size: 13px;
+  color: #55506a;
+  text-align: center;
+  margin-top: 24px;
+}
+
+/* Pasos */
+.pasos-grid { grid-template-columns: repeat(3, 1fr); }
+
+.paso .num {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #d91828;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+/* Contacto */
+.contacto {
+  background-color: rgb(14, 26, 44);
+  color: azure;
+  text-align: center;
+}
+
+.contacto h2 { color: azure; }
+
+.contacto p { max-width: 620px; margin: 0 auto 20px auto; line-height: 1.6; }
+
+.boton {
+  display: inline-block;
+  background-color: #d91828;
+  color: white;
+  text-decoration: none;
+  padding: 14px 34px;
+  border-radius: 24px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #ff3d4a;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+}
+
+.legal_links {
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.boton_legal {
+  display: inline-block;
+  color: azure;
+  text-decoration: none;
+  padding: 10px 22px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 22px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.boton_legal:hover {
+  border-color: #ff3d4a;
+  color: #ff6b74;
+}
+
+.contacto .mail {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #b9c2d0;
+}
+
+/* Enlace dentro de la nota legal de la API */
+.api .legal a {
+  color: #9a0e18;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .bloque { padding: 40px 6%; }
+  .grid, .pasos-grid { grid-template-columns: 1fr; }
+  .texto p, .api ul { font-size: 15px; }
+  .cabecera h1 { font-size: 30px; }
+}

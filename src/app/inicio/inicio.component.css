@@ -413,3 +413,62 @@ app-cueva {
   color: aliceblue;
   border: 1px solid aliceblue;
 }
+
+/* Sección Pragmify (producto destacado) */
+.pragmify_box{
+  width: 100%;
+  min-height: 420px;
+  padding: 70px 20px;
+  box-sizing: border-box;
+  background-image: linear-gradient(120deg, rgb(14, 26, 44), rgb(60, 12, 26));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pragmify_box .pragmify_content{
+  max-width: 760px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pragmify_box .pragmify_eyebrow{
+  color: #ff6b74;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.pragmify_box h1{
+  color: aliceblue;
+  margin: 12px 0 20px 0;
+  letter-spacing: 3px;
+}
+
+.pragmify_box p{
+  color: #d7deea;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.pragmify_box .ver_mas{
+  color: white;
+  margin-top: 30px;
+  background-color: #d91828;
+  width: 180px;
+  height: 45px;
+  border-radius: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pragmify_box .ver_mas:hover{
+  background-color: #ff3d4a;
+  transform: translateY(-2.5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
