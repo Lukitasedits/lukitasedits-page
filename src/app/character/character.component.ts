@@ -3,6 +3,7 @@ import {
   Component,
   ElementRef,
   HostListener,
+  NgZone,
   ViewChild,
 } from '@angular/core';
 import * as THREE from 'three';
@@ -40,11 +41,19 @@ export class CharacterComponent implements AfterViewInit {
     Math.PI
   );
 
+  constructor(private ngZone: NgZone) {}
+
   ngAfterViewInit(): void {
-    this.initThree();
-    this.loadModel();
-    this.animate();
-    this.onResize(); // Configuración inicial de tamaño
+    // Three.js corre su propio bucle con requestAnimationFrame. Si se ejecuta
+    // dentro de la zona de Angular, CADA frame dispara una detección de cambios
+    // global (~60 veces/seg), saturando el hilo principal hasta congelar la
+    // página ("La página no responde"). Lo aislamos fuera de la zona.
+    this.ngZone.runOutsideAngular(() => {
+      this.initThree();
+      this.loadModel();
+      this.animate();
+      this.onResize(); // Configuración inicial de tamaño
+    });
   }
 
   /**
@@ -63,7 +72,10 @@ export class CharacterComponent implements AfterViewInit {
       antialias: true,
       alpha: true, // Permite la transparencia del fondo del renderizador
     });
-    this.renderer.setPixelRatio(window.devicePixelRatio);
+    // Cap del pixel ratio: en pantallas HiDPI, devicePixelRatio (2-3) multiplica
+    // el buffer de render a millones de píxeles extra por frame sin beneficio
+    // visual real para este avatar. Lo limitamos a 2.
+    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     // REMOVIDO: this.renderer.outputEncoding = THREE.sRGBEncoding;
 
