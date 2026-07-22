@@ -4,6 +4,7 @@ import {
   ElementRef,
   HostListener,
   NgZone,
+  OnDestroy,
   ViewChild,
 } from '@angular/core';
 import * as THREE from 'three';
@@ -19,9 +20,14 @@ const HEAD_PITCH_LIMIT = Math.PI / 4; // 45 grados vertical
   templateUrl: './character.component.html',
   styleUrls: ['./character.component.css'],
 })
-export class CharacterComponent implements AfterViewInit {
+export class CharacterComponent implements AfterViewInit, OnDestroy {
   @ViewChild('rendererCanvas', { static: true })
   private rendererCanvas!: ElementRef<HTMLCanvasElement>;
+
+  // Solo renderizamos cuando el canvas está realmente visible en pantalla.
+  private isVisible = false;
+  private frameId = 0;
+  private io: IntersectionObserver | null = null;
 
   // Estado y Propiedades de Three.js (ahora propiedades de clase estándar)
   statusText: string = 'Inicializando...'; // Propiedad estándar en lugar de Signal
@@ -51,9 +57,32 @@ export class CharacterComponent implements AfterViewInit {
     this.ngZone.runOutsideAngular(() => {
       this.initThree();
       this.loadModel();
-      this.animate();
       this.onResize(); // Configuración inicial de tamaño
+
+      // El avatar está debajo del pliegue. Sin esto, el bucle de render
+      // satura la GPU al cargar la página aunque el avatar no se vea todavía.
+      this.io = new IntersectionObserver(
+        (entries) => {
+          this.isVisible = entries.some((e) => e.isIntersecting);
+          // Reiniciar el reloj al reaparecer evita un salto grande de animación.
+          if (this.isVisible) this.clock.getDelta();
+        },
+        { threshold: 0.01 }
+      );
+      this.io.observe(this.rendererCanvas.nativeElement);
+
+      this.animate();
     });
+  }
+
+  ngOnDestroy(): void {
+    // Sin esto, el bucle de render y el contexto WebGL sobreviven al
+    // componente: cada visita a Inicio dejaría un loop extra corriendo,
+    // acumulando CPU/RAM hasta congelar la pestaña.
+    cancelAnimationFrame(this.frameId);
+    this.io?.disconnect();
+    this.mixer?.stopAllAction();
+    this.renderer?.dispose();
   }
 
   /**
@@ -172,7 +201,11 @@ export class CharacterComponent implements AfterViewInit {
    * Bucle de animación principal.
    */
   private animate = () => {
-    requestAnimationFrame(this.animate);
+    this.frameId = requestAnimationFrame(this.animate);
+
+    // Fuera de pantalla: mantener vivo el bucle (barato) pero saltar el render
+    // (caro). Así la home no se congela mientras el usuario está en el hero.
+    if (!this.isVisible) return;
 
     const delta = this.clock.getDelta();
 
